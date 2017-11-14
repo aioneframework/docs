@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Aione Framework</title>
+	<!-- Global stylesheets -->
+	<link rel="stylesheet" type="text/css" href="http://aioneframework.com/aioneframework/assets/css/aione.min.css">
+	<style type="text/css">
+		.aione-nav>ul>li>ul{
+			display: block
+		}
+	</style>
+</head>
+<body class="">
+	<div id="aione_wrapper" class="aione-wrapper aione-layout-wide aione-theme-arcane">
+		<div class="aione-row">
+			<div id="aione_header" class="aione-header">
+				<div class="aione-row">
+					
+
+				</div><!-- .aione-row -->
+			</div><!-- #aione_header -->
+			<div id="aione_main" class="aione-main">
+				<div class="aione-row">
+					<div id="aione_sidebar" class="aione-sidebar">
+						<div class="aione-row">
+								
+
+							
+						</div><!-- .aione-row -->
+					</div><!-- #aione_sidebar -->
+					<div id="aione_content" class="aione-content">
+						<div class="aione-row">
+
+							<div id="aione_page_header" class="aione-page-header">
+								<div class="aione-row">
+									<div class="aione-page-title-container">
+										<h3 class="aione-page-title">Getting Started</h3>
+										<div class="clear"></div>
+									</div> <!-- .aione-page-title-container -->
+									<div class="clear"></div>
+								</div> <!-- .row -->
+							</div> <!-- #aione_page_header --> 
+
+							<div id="aione_page_content" class="aione-page-content">
+								<div class="aione-row">	
+									<div class="aione-page-content-primary">
+										<!-- Dashboard Widgets -->
+		<div class="ar">
+			<!-- Dashboard Widget -->
+			<div class="ac s100 m50 l25 pt-15 pb-15">
+				<div class="aione-widget aione-border">
+					<div class="aione-title">
+						<h4 class="aione-align-center font-weight-100 aione-border-bottom pb-15">Gulp Build</h4>
+					</div>
+					<div class="p-15"> 
+						<form class="form" action=""  method="post">
+							<select name="command" style="display:block">
+								<option value="" disabled selected>Select Command</option>
+								<option value="test-scss">Test SCSS</option>
+								<option value="makecss">BUILD CSS</option>
+								<option value="makejs">BUILD JS</option>
+								<!--
+								<option value="automakecss">BUILD CSS Automatically On change SCSS Files</option>
+								-->
+								<option value="">Default</option>
+							</select>
+							<br>
+							<input type="hidden" name="action" value="gulp">
+							<button class="btn waves-effect waves-light" type="submit">Execute Commmand</button>
+						</form>
+						
+					</div>
+				</div>
+			</div>
+			<!-- Dashboard Widget -->
+			<!-- Dashboard Widget -->
+			<div class="ac s100 m50 l25 pt-15 pb-15">
+				<div class="aione-widget aione-border">
+					<div class="aione-title">
+						<h4 class="aione-align-center font-weight-100 aione-border-bottom pb-15">Git Push</h4>
+					</div>
+					<div class="p-15"> 
+						<form class="form" action=""  method="post">
+							<input type="hidden" name="action" value="git-pull">
+							<button class="btn waves-effect waves-light" type="submit">Git Pull</button>
+						</form>
+						<form class="form" action=""  method="post">
+							<input type="hidden" name="action" value="git-push">
+							<button class="btn waves-effect waves-light" type="submit">Git Push</button>
+						</form>
+					</div>
+				</div>
+			</div>
+			<!-- Dashboard Widget -->
+		</div>
+
+    
+
+
+		
+									</div> <!-- .aione-page-content-primary -->	
+									<div class="aione-page-content-secondry">		
+									</div> <!-- .aione-page-content-secondry -->
+								</div> <!-- .aione-row -->
+							</div> <!-- #aione_page_content -->
+						</div><!-- .aione-row -->
+					</div><!-- #aione_content -->
+					<div class="clear"></div><!-- .clear -->
+				</div><!-- .aione-row -->
+			</div><!-- #aione_main -->
+			<div id="aione_footer" class="aione-footer">
+				<div class="aione-row">
+					&copy;2017 <a href="http://oxosolutions.com/" target="_blank">OXO Solutions</a>. All rights reserved. 
+				</div><!-- .aione-row -->
+			</div><!-- #aione_content --> 
+			<div class="clear"></div><!-- .clear -->
+		</div><!-- .aione-row -->
+	</div><!-- #aione_wrapper -->
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<script type="text/javascript">
+		$(window).on('load', function () {
+			// $('.append-content').load('test.html');
+			$('.aione-sidebar > .aione-row').load('sidenav.html');
+			$('.aione-header > .aione-row').load('_header.html');
+
+		});
+	</script>
+</html>

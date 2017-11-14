@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Aione Framework</title>
+	<!-- Global stylesheets -->
+	<link rel="stylesheet" type="text/css" href="http://aioneframework.com/aioneframework/assets/css/aione.min.css">
+   <style type="text/css">
+      .aione-nav>ul>li>ul{
+         display: block
+      }
+   </style>
+</head>
+<body class="">
+	<div id="aione_wrapper" class="aione-wrapper aione-layout-wide aione-theme-arcane">
+		<div class="aione-row">
+			<div id="aione_header" class="aione-header">
+				<div class="aione-row">
+					
+
+				</div><!-- .aione-row -->
+			</div><!-- #aione_header -->
+			<div id="aione_main" class="aione-main">
+				<div class="aione-row">
+					<div id="aione_sidebar" class="aione-sidebar">
+						<div class="aione-row">
+							
+						</div><!-- .aione-row -->
+					</div><!-- #aione_sidebar -->
+					<div id="aione_content" class="aione-content">
+						<div class="aione-row">
+
+							<div id="aione_page_header" class="aione-page-header">
+								<div class="aione-row">
+									<div class="aione-page-title-container">
+										<h3 class="aione-page-title">Grid</h3>
+										<div class="clear"></div>
+									</div> <!-- .aione-page-title-container -->
+									<div class="clear"></div>
+								</div> <!-- .row -->
+							</div> <!-- #aione_page_header --> 
+
+							<div id="aione_page_content" class="aione-page-content">
+								<div class="aione-row">	
+									<div class="aione-page-content-primary">
+
+<div class=" m-50">
+  <h2 class="light-blue">Aione Grid</h2>
+   <h3 class="light-blue">Containers</h3>
+   <p class="pb-10">Use .container for a responsive fixed width container.</p>
+       
+    <div class="ar">
+       <div class="ac s100 m50 l100">
+        <div class="field-wrapper ac field-wrapper-type-code small">
+         <div class="field field-type-code">
+             <textarea id="message">
+               <div class="ac s100 m50 l50 container">
+                
+               </div>
+              </textarea>
+         <div id="message_editor" class="aione-code-editor" data-mode="html"></div>
+         </div>
+        </div>
+    </div>
+  </div>
+</div>
+<div class="ar m-50">
+    <h4 class="light-blue">Introduction</h4>
+   <p>Grid systems are used for creating page layouts through a series of rows and columns that house your content.
+   Here's how the Aione grid system works:</p> 
+   <ul>
+       <li>Rows must be placed within a .container (fixed-width) or .container-fluid (full-width) for proper alignment and padding.
+        Use rows to create horizontal groups of columns.</li>
+        <br>
+        <li>Content should be placed within columns, and only columns may be immediate children of rows.</li>
+           <br>
+        <li>Predefined grid classes like .row and .ac s100 m50 l are available for quickly making grid layouts. 
+        Less mixins can also be used for more semantic layouts.</li>
+           <br>
+        <li>Columns create gutters (gaps between column content) via padding.
+        That padding is offset in rows for the first and last column via negative margin on .rows.</li>
+           <br>
+        <li>The negative margin is why the examples below are outdented.
+        It's so that content within grid columns is lined up with non-grid content.</li>
+           <br>
+        <li>Grid columns are created by specifying the number of 100 available columns you wish to span. 
+         </li>
+            <br>
+         <li>Grid classes apply to devices with screen widths greater than or equal to the breakpoint sizes, 
+         and override grid classes targeted at smaller devices.Therefore, e.g. applying any 
+          <br>
+         <span class="bg-pink bg-lighten-4 mt-5">.ac s100 m50</span> class to an element will not only affect its styling on medium devices but also on large devices if a
+         <span class="bg-pink bg-lighten-4 mt-5">.ac s100 l50</span></li>
+   </ul>
+</div>
+<div class="ar grid-example m-50">
+      <h3 class="light-blue">Example: Mobile and desktop</h3>
+          <div class="ac s100 m50 l8 aione-border-right">1</div>
+          <div class="ac s100 m50 l8 aione-border-right">2</div>
+          <div class="ac s100 m50 l8 aione-border-right">3</div>
+          <div class="ac s100 m50 l8 aione-border-right">4</div>
+          <div class="ac s100 m50 l8 aione-border-right">5</div>
+          <div class="ac s100 m50 l8 aione-border-right">6</div>
+          <div class="ac s100 m50 l8 aione-border-right">7</div>
+          <div class="ac s100 m50 l8 aione-border-right">8</div>
+          <div class="ac s100 m50 l8 aione-border-right">9</div>
+          <div class="ac s100 m50 l8 aione-border-right">10</div>
+          <div class="ac s100 m50 l8 aione-border-right">11</div>
+          <div class="ac s100 m50 l8">12</div>
+     <div class="ac s100 m50 l100">
+            <div class="field-wrapper ac field-wrapper-type-code small">
+         <div class="field field-type-code">
+        <textarea id="warning_message">
+              <div class="ac s100 m50 l8 aione-border-right">1</div>
+              <div class="ac s100 m50 l8 aione-border-right">2</div>
+              <div class="ac s100 m50 l8 aione-border-right">3</div>
+              <div class="ac s100 m50 l8 aione-border-right">4</div>
+              <div class="ac s100 m50 l8 aione-border-right">5</div>
+              <div class="ac s100 m50 l8 aione-border-right">6</div>
+              <div class="ac s100 m50 l8 aione-border-right">7</div>
+              <div class="ac s100 m50 l8 aione-border-right">8</div>
+              <div class="ac s100 m50 l8 aione-border-right">9</div>
+              <div class="ac s100 m50 l8 aione-border-right">10</div>
+              <div class="ac s100 m50 l8 aione-border-right">11</div>
+              <div class="ac s100 m50 l8 aione-border-right">12</div>
+       </textarea>
+         <div id="warning_message_editor" class="aione-code-editor" data-mode="html"></div>
+         </div>
+        </div>
+    </div>
+</div>
+<div class="ar grid-example m-50">
+     <div class="ac s100 m50 l50 aione-border-right">ac s100 m50 l50</div>
+    <div class="ac s100 m50 l50">ac s100 m50 l50</div>
+    
+    <div class="ac s100 m50 l100">
+        <div class="field-wrapper ac field-wrapper-type-code small">
+      <div class="field field-type-code">
+    <textarea id="one_half_message">
+    <div class="aione-message warning">
+        <ul class="aione-messages">
+           <div class="ac s100 m50 l50 aione-border-right">ac s100 m50 l50</div>
+           <div class="ac s100 m50 l50">ac s100 m50 l50</div>
+        </ul>
+    </div>
+    </textarea>
+        <div id="one_half_message_editor" class="aione-code-editor" data-mode="html"></div>
+         </div>
+        </div>
+    </div>
+</div>
+<div class="ar grid-example m-50">
+      <div class="ac s100 m50 l25 aione-border-right">ac s100 m50 l25</div>
+      <div class="ac s100 m50 l25 aione-border-right">ac s100 m50 l25</div>
+      <div class="ac s100 m50 l25 aione-border-right">ac s100 m50 l25</div>
+      <div class="ac s100 m50 l25">ac s100 m50 l25</div>
+    
+    <div class="ac s100 m50 l100">
+        <div class="field-wrapper ac field-wrapper-type-code small">
+         <div class="field field-type-code">
+        <textarea id="error_message">
+              <div class="ac s100 m50 l25 aione-border-right">ac s100 m50 l25</div>
+              <div class="ac s100 m50 l25 aione-border-right">ac s100 m50 l25</div>
+              <div class="ac s100 m50 l25 aione-border-right">ac s100 m50 l25</div>
+              <div class="ac s100 m50 l25 aione-border-right">ac s100 m50 l25</div>
+         </textarea>
+               <div id="error_message_editor" class="aione-code-editor" data-mode="html"></div>
+         </div>
+        </div>
+    </div>
+</div>
+<div class="ar grid-example m-50">
+    <h3 class="light-blue">Example: Mobile, tablet, desktop</h3>
+    <p class="p-10">Build on the previous example by creating even more dynamic and powerful layouts with tablet .col-m* classes.</p>
+       <div class="ac s100 m50 l20 aione-border-right">ac s100 m50 l20</div>
+       <div class="ac s100 m50 l50">ac s100 m50 l50</div>
+       <div class="ac s100 m50 l30">ac s100 m50 l30</div>
+
+     <div class="ac s100 m50 l100">
+        <div class="field-wrapper ac field-wrapper-type-code small">
+         <div class="field field-type-code">
+            <textarea id="tablet">
+               <div class="ac s100 m50 l20 aione-border-right">ac s100 m50 l20</div>
+               <div class="ac s100 m50 l50">ac s100 m50 l50</div>
+               <div class="ac s100 m50 l30">ac s100 m50 l30</div>
+             </textarea>
+         <div id="tablet_editor" class="aione-code-editor" data-mode="html"></div>
+         </div>
+        </div>
+    </div>
+</div>
+<div class="ar grid-example m-50">
+        <h3 class="light-blue"> Example: Column wrapping</h3>
+        <p>If more than 100 columns are placed within a single row, each group of extra columns will, as one unit,
+        wrap onto a new line.</p>
+       <div class="ac s100 m33 l30 aione-border-right">ac s100 m33 l30</div>
+       <div class="ac s100 m33 l70">ac s100 m33 l70</div>
+       <div class="ac s100 m50 l100">
+        <div class="field-wrapper ac field-wrapper-type-code small">
+         <div class="field field-type-code">
+    <textarea id="success_message">
+    <div class="ac s100 m33 l30 aione-border-right">ac s100 m33 l30</div>
+            <div class="ac s100 m33 l70 aione-border-right">ac s100 m33 l70</div>
+     </textarea>
+         <div id="success_message_editor" class="aione-code-editor" data-mode="html"></div>
+         </div>
+        </div>
+    </div>
+</div>
+<div class="ar grid-example m-50">
+       <div class="ac s100 m33 l30 aione-border-right">ac s100 m33 l30</div>
+       <div class="ac s100 m33 l40 aione-border-right">ac s100 m33 l40</div>
+       <div class="ac s100 m33 l30">ac s100 m33 l30</div>
+      
+    <div class="ac s100 m50 l100">
+            <div class="field-wrapper ac field-wrapper-type-code small">
+         <div class="field field-type-code">
+    <textarea id="er_message">
+           <div class="ac s100 m33 l30">ac s100 m33 l30</div>
+           <div class="ac s100 m33 l40">ac s100 m33 l40</div>
+           <div class="ac s100 m33 l30">ac s100 m33 l30</div>
+    </textarea>
+         <div id="er_message_editor" class="aione-code-editor" data-mode="html"></div>
+         </div>
+        </div>
+    </div>
+</div>
+</div> <!-- .aione-page-content-primary -->	
+									<div class="aione-page-content-secondry">		
+									</div> <!-- .aione-page-content-secondry -->
+								</div> <!-- .aione-row -->
+							</div> <!-- #aione_page_content -->
+						</div><!-- .aione-row -->
+					</div><!-- #aione_content -->
+					<div class="clear"></div><!-- .clear -->
+				</div><!-- .aione-row -->
+			</div><!-- #aione_main -->
+			<div id="aione_footer" class="aione-footer">
+				<div class="aione-row">
+					&copy;2017 <a href="http://oxosolutions.com/" target="_blank">OXO Solutions</a>. All rights reserved. 
+				</div><!-- .aione-row -->
+			</div><!-- #aione_content --> 
+			<div class="clear"></div><!-- .clear -->
+		</div><!-- .aione-row -->
+	</div><!-- #aione_wrapper -->
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+   <script type="text/javascript">
+      $(window).on('load', function () {
+         // $('.append-content').load('test.html');
+         $('.aione-sidebar > .aione-row').load('sidenav.html');
+         $('.aione-header > .aione-row').load('_header.html');
+      });
+   </script>
+</html>

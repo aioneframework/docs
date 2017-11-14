@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Aione Framework</title>
+  <!-- Global stylesheets -->
+  <link rel="stylesheet" type="text/css" href="http://aioneframework.com/aioneframework/assets/css/aione.min.css">
+   <style type="text/css">
+      .aione-nav>ul>li>ul{
+         display: block
+      }
+   </style>
+</head>
+<body class="">
+  <div id="aione_wrapper" class="aione-wrapper aione-layout-wide aione-theme-arcane">
+    <div class="aione-row">
+      <div id="aione_header" class="aione-header">
+        <div class="aione-row">
+        
+
+        </div><!-- .aione-row -->
+      </div><!-- #aione_header -->
+      <div id="aione_main" class="aione-main">
+        <div class="aione-row">
+          <div id="aione_sidebar" class="aione-sidebar">
+            <div class="aione-row">
+              
+            </div><!-- .aione-row -->
+          </div><!-- #aione_sidebar -->
+          <div id="aione_content" class="aione-content">
+            <div class="aione-row">
+
+              <div id="aione_page_header" class="aione-page-header">
+                <div class="aione-row">
+                  <div class="aione-page-title-container">
+                    <h3 class="aione-page-title">Aione-Forms</h3>
+                    <div class="clear"></div>
+                  </div> <!-- .aione-page-title-container -->
+                  <div class="clear"></div>
+                </div> <!-- .row -->
+              </div> <!-- #aione_page_header --> 
+
+              <div id="aione_page_content" class="aione-page-content">
+                <div class="aione-row"> 
+                  <div class="aione-page-content-primary">
+                  <div class="main">
+                         <div class="ar">
+                              <h4 style="text-align:center;">Register Form</h4>
+                           <div class="ac s100 m75 l40">
+                               <form action="/examples/html/action.php" method="post" id="users">
+                                <div class="pp">
+                                    <label class="label" for="name">Name:</label><br>
+                                    <input class="input" type="text" name="name" id="name"><br>
+                                </div>
+                                    <div class="pp">
+                                       <label class="label" for="email">Email:</label><br>
+                                       <input class="input" type="text" name="email" id="email"><br>
+                                 </div>
+                                <div class="pp"> 
+                                  <label class="label"  for="subject">subject:</label><br>
+                                 <input class="input" type="text" name="subject" id="subject"><br>
+                             </div>
+                                  <div class="pp"> 
+                                     <label class="label" for="address">Massage:</label><br>
+                                     <textarea rows="3" cols="30" name="massage" id="massage"></textarea><br>
+                                </div>
+                               <div class="pp"> 
+                                  <input type="submit" value="Submit">
+                                </div>
+                              </form>
+                           </div>
+                             <div class="ac s100 m75 l60 textcenter">
+                               <h5>Connect with me on Social Media</h5>
+                                  <div class="aligncenter">
+                                 <div class="social-networks-wrapper">
+                                     <i class="fa fa-facebook" aria-hidden="true">
+                                        <a href="https://www.facebook.com/people/Ashish-Joshi/100011626149252"></a>
+                                    </i>
+                                     <i class="fa fa-twitter" aria-hidden="true">
+                                         <a href="https://twitter.com/ashvan08"></a>
+                                    </i>
+                                    <i class="fa fa-instagram" aria-hidden="true">
+                                         <a href="https://www.instagram.com/ajoshi75/"></a>
+                                    </i>
+                                    <i class="fa fa-linkedin" aria-hidden="true">
+                                         <a href="https://www.linkedin.com/in/ashish-joshi-phd-mbbs-mph-48403414/"></a>
+                                    </i>
+                              </div>
+                                </div>
+                          </div>
+                         </div>
+                      </div>
+                   </div> <!-- .aione-page-content-primary --> 
+                  <div class="aione-page-content-secondry">   
+                  </div> <!-- .aione-page-content-secondry -->
+                </div> <!-- .aione-row -->
+              </div> <!-- #aione_page_content -->
+            </div><!-- .aione-row -->
+          </div><!-- #aione_content -->
+          <div class="clear"></div><!-- .clear -->
+        </div><!-- .aione-row -->
+      </div><!-- #aione_main -->
+      <div id="aione_footer" class="aione-footer">
+        <div class="aione-row">
+          &copy;2017 <a href="http://oxosolutions.com/" target="_blank">OXO Solutions</a>. All rights reserved. 
+        </div><!-- .aione-row -->
+      </div><!-- #aione_content --> 
+      <div class="clear"></div><!-- .clear -->
+    </div><!-- .aione-row -->
+  </div><!-- #aione_wrapper -->
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+   <script type="text/javascript">
+      $(window).on('load', function () {
+         // $('.append-content').load('test.html');
+         $('.aione-sidebar > .aione-row').load('sidenav.html');
+         $('.aione-header > .aione-row').load('_header.html');
+      });
+   </script>
+</html>
