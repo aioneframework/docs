@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Aione Framework</title>
+	<!-- Global stylesheets -->
+	<link rel="stylesheet" type="text/css" href="http://aioneframework.com/aioneframework/assets/css/aione.min.css">
+   <style type="text/css">
+      .aione-nav>ul>li>ul{
+         display: block
+      }
+   </style>
+</head>
+<body class="">
+	<div id="aione_wrapper" class="aione-wrapper aione-layout-wide aione-theme-arcane">
+		<div class="aione-row">
+			<div id="aione_header" class="aione-header">
+				<div class="aione-row">
+				
+
+				</div><!-- .aione-row -->
+			</div><!-- #aione_header -->
+			<div id="aione_main" class="aione-main">
+				<div class="aione-row">
+					<div id="aione_sidebar" class="aione-sidebar">
+						<div class="aione-row">
+							
+						</div><!-- .aione-row -->
+					</div><!-- #aione_sidebar -->
+					<div id="aione_content" class="aione-content m-4 aione-border">
+						<div class="aione-row">
+
+							<div id="aione_page_header" class="aione-page-header">
+								<div class="aione-row">
+									<div class="aione-page-title-container">
+										<h4 class="m-3 light-blue darken-4">Breadcrumbs</h4>
+										<div class="clear"></div>
+									</div> <!-- .aione-page-title-container -->
+									<div class="clear"></div>
+								</div> <!-- .row -->
+							</div> <!-- #aione_page_header --> 
+
+							<div id="aione_page_content" class="">
+								<div class="aione-row">	
+									<div class="aione-page-content-primary p-20">
+										<div class="ar">
+											<div class="ac s100 m100 l100">
+												<p class="pv-20 font-size-16 font-weight-100">Breadcrumbs are a good way to display your current location. This is usually used when you have multiple layers of content.</p>	
+											</div>
+										
+			                          		<div class="ac s100 m50 l100 mt-20">
+												<div class="field-wrapper ac field-wrapper-type-code small aione-border">
+					                              	<p class="font-size-16 pv-20">Aione-Align-Left</p>
+					                               <div class="field field-type-code">
+					                                   <div class="aione-border p-10 aione-align-left">
+														    <ul id="aione_breadcrumbs" class="aione-breadcrumbs aione-navigation">
+														        <li><a href="#"><i class="fa fa-home"></i></a></li>
+														        <li><a href="#">Home</a></li>
+														        <li><a href="#">About</a>
+														        <li><a href="#">Contact</a></li>
+														          <!--   <ul class="aione-subnavigation">
+														                <li><a href="#">Forms</a></li>
+														                <li><a href="#">Add Form</a></li>
+
+														            </ul> -->		
+														        </li>
+														    </ul>
+														</div>
+					                                 <div id="breadcrumbs_editor" class="aione-code-editor" data-mode="html"></div>
+					                               </div>
+					                              </div>
+			                          		</div>
+			                          		<div class="ac s100 m50 l100 mt-20">
+												<div class="field-wrapper ac field-wrapper-type-code small aione-border">
+					                              	<p class="font-size-16 pv-20 aione-align-right">Aione-Align-Right</p>
+					                               <div class="field field-type-code">
+					                                   <div class="aione-border p-10 aione-align-right">
+														    <ul id="aione_breadcrumbs" class="aione-breadcrumbs aione-navigation">
+														        <li><a href="#"><i class="fa fa-home"></i></a></li>
+														        <li><a href="#">Home</a></li>
+														        <li><a href="#">About</a>
+														        <li><a href="#">Contact</a></li>
+														          <!--   <ul class="aione-subnavigation">
+														                <li><a href="#">Forms</a></li>
+														                <li><a href="#">Add Form</a></li>
+
+														            </ul> -->		
+														        </li>
+														    </ul>
+														</div>
+					                                 <div id="breadcrumbs_editor" class="aione-code-editor" data-mode="html"></div>
+					                               </div>
+					                              </div>
+			                          		</div>
+										</div>
+									 </div>     
+									</div>            
+									</div>	
+									</div> <!-- .aione-page-content-primary -->	
+									<div class="aione-page-content-secondry">		
+									</div> <!-- .aione-page-content-secondry -->
+								</div> <!-- .aione-row -->
+							</div> <!-- #aione_page_content -->
+						</div><!-- .aione-row -->
+					</div><!-- #aione_content -->
+					<div class="clear"></div><!-- .clear -->
+				</div><!-- .aione-row -->
+			</div><!-- #aione_main -->
+			<div id="aione_footer" class="aione-footer">
+				<div class="aione-row">
+					&copy;2017 <a href="http://oxosolutions.com/" target="_blank">OXO Solutions</a>. All rights reserved. 
+				</div><!-- .aione-row -->
+			</div><!-- #aione_content --> 
+			<div class="clear"></div><!-- .clear -->
+		</div><!-- .aione-row -->
+	</div><!-- #aione_wrapper -->
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+   <script type="text/javascript">
+      $(window).on('load', function () {
+         // $('.append-content').load('test.html');
+         $('.aione-sidebar > .aione-row').load('sidenav.html');
+         $('.aione-header > .aione-row').load('_header.html');
+      });
+   </script>
+</html>

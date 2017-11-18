@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Aione Framework</title>
+	<!-- Global stylesheets -->
+	<link rel="stylesheet" type="text/css" href="http://aioneframework.com/aioneframework/assets/css/aione.min.css">
+   <style type="text/css">
+      .aione-nav>ul>li>ul{
+         display: block
+      }
+   </style>
+</head>
+<body class="">
+	<div id="aione_wrapper" class="aione-wrapper aione-layout-wide aione-theme-arcane">
+		<div class="aione-row">
+			<div id="aione_header" class="aione-header">
+				<div class="aione-row">
+				
+
+				</div><!-- .aione-row -->
+			</div><!-- #aione_header -->
+			<div id="aione_main" class="aione-main">
+				<div class="aione-row">
+					<div id="aione_sidebar" class="aione-sidebar">
+						<div class="aione-row">
+							
+						</div><!-- .aione-row -->
+					</div><!-- #aione_sidebar -->
+					<div id="aione_content" class="aione-content m-4 aione-border">
+						<div class="aione-row">
+							<div id="aione_page_header" class="aione-page-header">
+								<div class="aione-row">
+									<div class="aione-page-title-container">
+										<h4 class="m-3 light-blue darken-4">Slider</h4>
+										<div class="clear"></div>
+									</div> <!-- .aione-page-title-container -->
+									<div class="clear"></div>
+								</div> <!-- .row -->
+							</div> <!-- #aione_page_header --> 
+
+							<div id="aione_page_content" class="">
+								<div class="aione-row">	
+									<div class="aione-page-content-primary p-20">
+										<section id="about" class="about" style="background-color:#f2f2f2;">
+										    <div class="ar pt-40 pb-40 pl-30 pr-30">
+										        <div class="ac s100 m50 l50 pb-20">
+										           <div class="aione-title">
+										                <h2 class="light-blue-text text-darken-3 aione-align-center m-0 pt-20 pb-20">Gallery</h2>
+										            </div>
+										            <div id="gallery" class="owl-carousel owl-theme gallery aione-theme">
+										                <div class="gallery-item">
+										                    <img src="http://slum.fhts.ac.in/files/organization_256/gallery/slum_pic.jpg" />
+										                </div>
+										                <div class="gallery-item">
+										                    <img src="http://slum.fhts.ac.in/files/organization_256/gallery/IMG_3194.JPG" />
+										                </div>
+										                <div class="gallery-item">
+										                    <img src="http://slum.fhts.ac.in/files/organization_256/gallery/IMG_7492.JPG" />
+										                </div>
+										                <div class="gallery-item">
+										                    <img src="http://slum.fhts.ac.in/files/organization_256/gallery/IMG_7493.JPG" />
+										                </div>
+										                <div class="gallery-item">
+										                    <img src="http://slum.fhts.ac.in/files/organization_256/gallery/IMG_7495.JPG" />
+										                </div>
+										                <div class="gallery-item">
+										                    <img src="http://slum.fhts.ac.in/files/organization_256/gallery/IMG_7518.JPG" />
+										                </div>
+										                <div class="gallery-item">
+										                    <img src="http://slum.fhts.ac.in/files/organization_256/gallery/IMG_7536.JPG" />
+										                </div>
+										            </div>
+										        </div>
+										      
+										    </div>
+										</section>
+			                         </div>
+									 </div>     
+									</div>            
+									</div>	
+									</div> <!-- .aione-page-content-primary -->	
+									<div class="aione-page-content-secondry">		
+									</div> <!-- .aione-page-content-secondry -->
+								</div> <!-- .aione-row -->
+							</div> <!-- #aione_page_content -->
+						</div><!-- .aione-row -->
+					</div><!-- #aione_content -->
+					<div class="clear"></div><!-- .clear -->
+				</div><!-- .aione-row -->
+			</div><!-- #aione_main -->
+			<div id="aione_footer" class="aione-footer">
+				<div class="aione-row">
+					&copy;2017 <a href="http://oxosolutions.com/" target="_blank">OXO Solutions</a>. All rights reserved. 
+				</div><!-- .aione-row -->
+			</div><!-- #aione_content --> 
+			<div class="clear"></div><!-- .clear -->
+		</div><!-- .aione-row -->
+	</div><!-- #aione_wrapper -->
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+   <script type="text/javascript">
+      $(window).on('load', function () {
+         // $('.append-content').load('test.html');
+         $('.aione-sidebar > .aione-row').load('sidenav.html');
+         $('.aione-header > .aione-row').load('_header.html');
+      });
+   </script>
+</html>

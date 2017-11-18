@@ -4,10 +4,21 @@
 	<title>Aione Framework</title>
 	<!-- Global stylesheets -->
 	<link rel="stylesheet" type="text/css" href="http://aioneframework.com/aioneframework/assets/css/aione.min.css">
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600,700,800,900">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<script type="text/javascript" src="http://aioneframework.com/aioneframework/assets/js/vendor.js"></script>
+	<script type="text/javascript" src="http://aioneframework.com/aioneframework/assets/js/aione.js"></script>
 	<style type="text/css">
 		.aione-nav>ul>li>ul{
 			display: block
 		}
+		.more-options{
+			display:none;
+		}
+		.code-box:hover .more-options{
+			display:block;
+		} 
 	</style>
 </head>
 <body class="">
@@ -28,71 +39,230 @@
 							
 						</div><!-- .aione-row -->
 					</div><!-- #aione_sidebar -->
-					<div id="aione_content" class="aione-content">
+					<div id="aione_content" class="aione-content m-4 aione-border">
 						<div class="aione-row">
 
 							<div id="aione_page_header" class="aione-page-header">
 								<div class="aione-row">
 									<div class="aione-page-title-container">
-										<h3 class="aione-page-title">Getting Started</h3>
+										<h4 class="light-blue darken-4 m-0">Getting started with Aione framework</h4>
 										<div class="clear"></div>
 									</div> <!-- .aione-page-title-container -->
 									<div class="clear"></div>
 								</div> <!-- .row -->
 							</div> <!-- #aione_page_header --> 
 
-							<div id="aione_page_content" class="aione-page-content">
+							<div id="aione_page_content" class="aione-page-content mr-0">
 								<div class="aione-row">	
 									<div class="aione-page-content-primary">
 										<!-- Dashboard Widgets -->
-		<div class="ar">
-			<!-- Dashboard Widget -->
-			<div class="ac s100 m50 l25 pt-15 pb-15">
-				<div class="aione-widget aione-border">
-					<div class="aione-title">
-						<h4 class="aione-align-center font-weight-100 aione-border-bottom pb-15">Gulp Build</h4>
-					</div>
-					<div class="p-15"> 
-						<form class="form" action=""  method="post">
-							<select name="command" style="display:block">
-								<option value="" disabled selected>Select Command</option>
-								<option value="test-scss">Test SCSS</option>
-								<option value="makecss">BUILD CSS</option>
-								<option value="makejs">BUILD JS</option>
-								<!--
-								<option value="automakecss">BUILD CSS Automatically On change SCSS Files</option>
-								-->
-								<option value="">Default</option>
-							</select>
-							<br>
-							<input type="hidden" name="action" value="gulp">
-							<button class="btn waves-effect waves-light" type="submit">Execute Commmand</button>
-						</form>
-						
-					</div>
-				</div>
-			</div>
-			<!-- Dashboard Widget -->
-			<!-- Dashboard Widget -->
-			<div class="ac s100 m50 l25 pt-15 pb-15">
-				<div class="aione-widget aione-border">
-					<div class="aione-title">
-						<h4 class="aione-align-center font-weight-100 aione-border-bottom pb-15">Git Push</h4>
-					</div>
-					<div class="p-15"> 
-						<form class="form" action=""  method="post">
-							<input type="hidden" name="action" value="git-pull">
-							<button class="btn waves-effect waves-light" type="submit">Git Pull</button>
-						</form>
-						<form class="form" action=""  method="post">
-							<input type="hidden" name="action" value="git-push">
-							<button class="btn waves-effect waves-light" type="submit">Git Push</button>
-						</form>
-					</div>
-				</div>
-			</div>
-			<!-- Dashboard Widget -->
-		</div>
+										<div class="p-15 line-height-18">
+											<div class="bg-grey p-20 aione-border-left bg-lighten-5 line-height-20 border-width-4 border-light-blue border-darken-3 mb-30">
+												The Aione framework needs only the basic knowledge of HTML,there is no need of CSS and Javascript.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dignissim orci in lorem tincidunt, in posuere nunc imperdiet. Nulla eget.
+											</div>
+
+											<div>
+												<h5 class="mv-20">What is Aione framework?</h5>
+												
+												Aione framework is
+												<ul class="p-10 line-height-20">
+													<li><i class="fa fa-angle-double-right mh-10"></i>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dignissim orci in lorem tincidunt, in posuere nunc imperdiet. Nulla eget.</li>
+													<li><i class="fa fa-angle-double-right mh-10"></i>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dignissim orci in lorem tincidunt.</li>
+													<li><i class="fa fa-angle-double-right mh-10"></i>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+													<li><i class="fa fa-angle-double-right mh-10"></i>Morbi dignissim orci in lorem tincidunt, in posuere nunc imperdiet. Nulla eget.</li>
+													<li><i class="fa fa-angle-double-right mh-10"></i>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dignissim orci in lorem tincidunt, in posuere nunc imperdiet. Nulla eget.</li>
+													
+												</ul>
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dignissim orci in lorem tincidunt, in posuere nunc imperdiet. Nulla eget.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dignissim orci in lorem tincidunt, in posuere nunc imperdiet. Nulla eget.</p>
+												
+											</div>
+											<div>
+												<h5 class="mv-20">Include in Your HTML</h5>
+												<p class="mb-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dignissim orci in lorem tincidunt, in posuere nunc imperdiet.</p>
+												<div class="aione-border p-15 code-box bg-grey bg-lighten-4" style="position:relative;box-shadow: 0 1px 2px 0 rgba(34,36,38,.15)">
+													<dpan style="position: absolute;right: 0;top: 0" class="bg-white aione-border p-10 more-options"><a href="">View Output</a> </dpan>
+													<code>&lt;!DOCTYPE html&gt;<br />
+													&lt;html&gt;<br />
+													&lt;head&gt;<br />
+														&lt;title&gt;Getting started&lt;/title&gt;<br />
+														&lt;link rel="stylesheet" type="text/css" href="http://aioneframework.com/aioneframework/assets/css/aione.min.css"&gt;<br />
+														&lt;link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600,700,800,900"&gt;<br />
+														&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"&gt;<br />
+														&lt;link rel="stylesheet" type="text/css" href="assets/css/style.css"&gt;<br />
+														&lt;script type="text/javascript" src="http://aioneframework.com/aioneframework/assets/js/vendor.js"&gt;&lt;/script&gt;<br />
+														&lt;script type="text/javascript" src="http://aioneframework.com/aioneframework/assets/js/aione.js"&gt;&lt;/script&gt;<br />
+													&lt;/head&gt;<br />
+													&lt;body&gt;<br />
+													&lt;/body&gt;<br />
+													&lt;/html&gt;<br /></code>							
+																											
+												</div>
+												
+											</div>
+											<div>
+												<h5 class="mv-20">Aione framework CDN</h5>
+												You can find all the versions of the CDN at <a>github</a>.
+												<div class="aione-border p-15 code-box bg-grey bg-lighten-4" style="position:relative;box-shadow: 0 1px 2px 0 rgba(34,36,38,.15)">
+													&lt;link rel="stylesheet" type="text/css" href="http://aioneframework.com/aioneframework/assets/css/aione.min.css"&gt;<br />
+													&lt;script type="text/javascript" src="http://aioneframework.com/aioneframework/assets/js/vendor.js"&gt;&lt;/script&gt;<br />
+														&lt;script type="text/javascript" src="http://aioneframework.com/aioneframework/assets/js/aione.js"&gt;&lt;/script&gt;<br />
+												</div>	
+											</div>
+											<div>
+												<h5 class="mv-20">Downloads</h5>
+												
+												<div class="aione-table">
+													<table>
+														<thead>
+															<tr>
+																<th>
+																	Files
+																</th>
+																<th>
+																	Download
+																</th>
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																<td>aione.min,css</td>
+																<td><a href="">Download</a></td>
+															</tr>
+															<tr>
+																<td>vendor.min.js</td>
+																<td><a href="">Download</a></td>
+															</tr>
+															<tr>
+																<td>aione.min.js</td>
+																<td><a href="">Download</a></td>	
+															</tr>
+														</tbody>
+													</table>
+												</div>	
+											</div>
+											<h5 class="mv-20">Table of content</h5>
+											<div class="ar aione-border ">
+
+												<div class="ac s100 m100 l100">
+													<div class="">
+												          <table class="striped">
+												                <thead>
+												                  <tr>
+												                      <th>Title</th>
+												                      <th>Link</th>
+												                      <th>Item Price</th>
+												                  </tr>
+												                </thead>
+
+												                <tbody>
+												                  <tr>
+												                    <td>Layouts</td>
+												                    <td><a href=""></a></td>
+												                    <td></td>
+												                  </tr>
+												                  <tr>
+												                    <td>Grid</td>
+												                    <td><a href="grid.html">http://manage.aioneframework.com/docs/grid.html</a></td>
+												                    <td></td>
+												                  </tr>
+												                  <tr>
+												                    <td>Colors</td>
+												                    <td><a href="http://manage.aioneframework.com/docs/colors.html">http://manage.aioneframework.com/docs/colors.html</a></td>
+												                    <td></td>
+												                  </tr>
+												                  <tr>
+												                    <td>Components</td>
+												                    <td><a href=""></a></td>
+												                    <td></td>
+												                  </tr>
+												                  <tr>
+												                    <td>Buttons</td>
+												                    <td><a href="http://manage.aioneframework.com/docs/buttons.html">http://manage.aioneframework.com/docs/buttons.html</a></td>
+												                    <td></td>
+												                  </tr>
+												                  <tr>
+												                    <td>Tables</td>
+												                     <td><a href="http://manage.aioneframework.com/docs/tables.html">http://manage.aioneframework.com/docs/tables.html</a></td>
+												                    <td></td>
+												                  </tr>
+												                  <tr>
+												                    <td>Aione Message</td>
+												                    <td><a href="http://manage.aioneframework.com/docs/aione-messages.html">http://manage.aioneframework.com/docs/aione-messages.html</a></td>
+												                    <td></td>
+												                  </tr>
+												                  <tr>
+												                    <td>Icons</td>
+												                    <td><a href="http://manage.aioneframework.com/docs/icons.html">http://manage.aioneframework.com/docs/icons.html</a></td>
+												                    <td></td>
+												                  </tr>
+												                  <tr>
+												                    <td>Pagination</td>
+												                     <td><a href="http://manage.aioneframework.com/docs/pagination.html">http://manage.aioneframework.com/docs/pagination.html</a></td>
+
+												                    <td></td>
+												                  </tr>
+												                  <tr>
+												                    <td>badges</td>
+												                      <td><a href="http://manage.aioneframework.com/docs/badges.html">http://manage.aioneframework.com/docs/badges.html</a></td>
+
+												                    <td></td>
+												                  </tr>
+												                   <tr>
+												                    <td>Labels</td>
+												                   	 <td><a href="http://manage.aioneframework.com/docs/preloader.html">http://manage.aioneframework.com/docs/preloader.html</a></td>
+																	<td></td>
+												                  </tr>
+												                  <tr>
+												                    <td>Preloader</td>
+												                    <td><a href="http://manage.aioneframework.com/docs/icons.html">http://manage.aioneframework.com/docs/icons.html</a></td>
+												                    <td></td>
+												                  </tr>
+												                  <tr>
+												                    <td>Typography</td>
+												                    <td><a href="http://manage.aioneframework.com/docs/typography.html">http://manage.aioneframework.com/docs/typography.html</a></td>
+												                    <td></td>
+												                  </tr>
+												                   <tr>
+												                    <td>Menubar</td>
+												                    <td><a href=""></a></td>
+												                    <td></td>
+												                  </tr>
+												                  <tr>
+												                    <td>Horizontal</td>
+												                    <td><a href="http://manage.aioneframework.com/docs/horizontal-menu.html">http://manage.aioneframework.com/docs/horizontal-menu.html</a></td>
+												                    <td></td>
+												                  </tr>
+												                  <tr>
+												                    <td>Vertical</td>
+												                    <td><a href="http://manage.aioneframework.com/docs/vertical-menu.html">http://manage.aioneframework.com/docs/vertical-menu.html</a></td>
+												                    <td></td>
+												                  </tr>
+												                    <tr>
+												                    <td>Forms</td>
+												                    <td><a href="http://manage.aioneframework.com/docs/forms.html">http://manage.aioneframework.com/docs/forms.html</a></td>
+												                  </tr>
+												                  <tr>
+												                    <td>Media</td>
+												                    <td><a href="http://manage.aioneframework.com/docs/media.html">http://manage.aioneframework.com/docs/media.html</a></td><td></td>
+												                    <td></td>
+												                  </tr>
+												                  <tr>
+												                    <td>Breadcrumbs</td>
+												                    <td><a href="http://manage.aioneframework.com/docs/breadcrumbs.html">http://manage.aioneframework.com/docs/breadcrumbs.html</a></td><td></td>
+												                    <td></td>
+												                  </tr>
+												                  <tr>
+												                    <td>Testimonial</td>
+												                    <td><a href="http://manage.aioneframework.com/docs/testimonial.html">http://manage.aioneframework.com/docs/testimonial.html</a></td><td></td>
+												                    <td></td>
+												                  </tr>
+												                </tbody>
+												              </table>  
+												        </div>
+												</div>
+											</div>
+										</div>
+											
 
     
 
