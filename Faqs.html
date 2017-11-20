@@ -4,23 +4,29 @@
   <title>Aione Framework</title>
   <!-- Global stylesheets -->
   <link rel="stylesheet" type="text/css" href="http://aioneframework.com/aioneframework/assets/css/aione.min.css">
-   <style type="text/css">
-      .aione-nav>ul>li>ul{
-         display: block
-      }
-   </style>
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600,700,800,900">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <script type="text/javascript" src="http://aioneframework.com/aioneframework/assets/js/vendor.js"></script>
+  <script type="text/javascript" src="http://aioneframework.com/aioneframework/assets/js/aione.js"></script>
+  <style type="text/css">
+    .aione-nav>ul>li>ul{
+      display: block
+    }
+    .more-options{
+      display:none;
+    }
+    .code-box:hover .more-options{
+      display:block;
+    } 
+  </style>
 </head>
 <body class="">
   <div id="aione_wrapper" class="aione-wrapper aione-layout-wide aione-theme-arcane">
     <div class="aione-row">
       <div id="aione_header" class="aione-header">
         <div class="aione-row">
-          <div id="aione_header_left" class="aione-header-left">
-            <div class="aione-row">
-              <h1 class="white m-0 pv-0 ph-15 font-size-28 font-weight-300 line-height-40 site-title">Aione Framework </h1>
-              
-            </div><!-- .aione-row -->
-          </div><!-- #aione_header_left -->
+          
 
         </div><!-- .aione-row -->
       </div><!-- #aione_header -->
@@ -28,53 +34,80 @@
         <div class="aione-row">
           <div id="aione_sidebar" class="aione-sidebar">
             <div class="aione-row">
+                
+
               
             </div><!-- .aione-row -->
           </div><!-- #aione_sidebar -->
-          <div id="aione_content" class="aione-content">
+          <div id="aione_content" class="aione-content m-4 aione-border">
             <div class="aione-row">
 
               <div id="aione_page_header" class="aione-page-header">
                 <div class="aione-row">
                   <div class="aione-page-title-container">
-                    <h3 class="aione-page-title">Tables</h3>
+                    <h4 class="light-blue darken-4 m-0">Getting started with Aione framework</h4>
                     <div class="clear"></div>
                   </div> <!-- .aione-page-title-container -->
                   <div class="clear"></div>
                 </div> <!-- .row -->
               </div> <!-- #aione_page_header --> 
 
-              <div id="aione_page_content" class="aione-page-content">
-                <div class="aione-row"> 
-                  <div class="aione-page-content-primary">
-                              <div class="aione-collapsible">
-                  <div class="aione-collapsible-header">
-                        <h5>FAQs</h5>    
-                  </div>
-                  <div class="aione-description">
-               <ul>
-               <li>When will I have access to the lectures and assignments</li>
-               <li>When will I have access to the lectures and assignments</li>
-               <li>When will I have access to the lectures and assignments</li>
+              <div id="aione_page_content" class="aione-page-content mr-0">
+                <div class="aione-row">
 
-           </ul>
-      </div>
-    </div>
- 
-  
- <style type="text/css">
-   .aione-collapsible{
-       margin:50px;
-   }
-   
-     p{
-        font-size: 14px;
-        line-height: 21px;
-        font-family: 'Open Sans';
-     }
- </style>
-                         
-                   </div> <!-- .aione-page-content-primary --> 
+                  <div class="aione-page-content-primary p-10">
+                    <div class="aione-border">
+                      <div class="bg-grey bg-lighten-4 aione-border-bottom m-0 p-10">
+                        Frequently Asked Question<i class="aione-float-right fa fa-code"></i> 
+                      </div>
+                      <div class=" p-10">
+                        <div class="aione-collapsible">
+                            <div class="aione-item">
+                              <div class="aione-item-header">
+                                asas
+                              </div>
+                              <div class="aione-item-content">
+                                wewewe
+                              </div>
+                            </div>
+                            <div class="aione-item">
+                              <div class="aione-item-header">
+                                asas
+                              </div>
+                              <div class="aione-item-content">
+                                wewewe
+                              </div>
+                            </div>
+                            <div class="aione-item">
+                              <div class="aione-item-header">
+                                asas
+                              </div>
+                              <div class="aione-item-content">
+                                wewewe
+                              </div>
+                            </div>
+                            <div class="aione-item">
+                              <div class="aione-item-header">
+                                asas
+                              </div>
+                              <div class="aione-item-content">
+                                wewewe
+                              </div>
+                            </div>
+                            <div class="aione-item">
+                              <div class="aione-item-header">
+                                asas
+                              </div>
+                              <div class="aione-item-content">
+                                wewewe
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                    <h5 class="mv-20">Basic Collapsible</h5>
+                    
+                  </div> <!-- .aione-page-content-primary --> 
                   <div class="aione-page-content-secondry">   
                   </div> <!-- .aione-page-content-secondry -->
                 </div> <!-- .aione-row -->
@@ -94,11 +127,12 @@
   </div><!-- #aione_wrapper -->
 </body>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-   <script type="text/javascript">
-      $(window).on('load', function () {
-         // $('.append-content').load('test.html');
-         $('.aione-sidebar > .aione-row').load('sidenav.html');
+  <script type="text/javascript">
+    $(window).on('load', function () {
+      // $('.append-content').load('test.html');
+      $('.aione-sidebar > .aione-row').load('sidenav.html');
+      $('.aione-header > .aione-row').load('_header.html');
 
-      });
-   </script>
+    });
+  </script>
 </html>
