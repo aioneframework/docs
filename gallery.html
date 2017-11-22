@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Aione Framework</title>
+	<!-- Global stylesheets -->
+	<link rel="stylesheet" type="text/css" href="http://aioneframework.com/aioneframework/assets/css/aione.min.css">
+	<link rel="stylesheet" type="text/css" href="//cdn.rawgit.com/oxosolutions/aione-gallery/38b37866/public/css/aione-gallery-public.css">
+   <style type="text/css">
+      .aione-nav>ul>li>ul{
+         display: block
+      }
+   </style>
+</head>
+<body class="">
+	<div id="aione_wrapper" class="aione-wrapper aione-layout-wide aione-theme-arcane">
+		<div class="aione-row">
+			<div id="aione_header" class="aione-header">
+				<div class="aione-row">
+					
+
+				</div><!-- .aione-row -->
+			</div><!-- #aione_header -->
+			<div id="aione_main" class="aione-main">
+				<div class="aione-row">
+					<div id="aione_sidebar" class="aione-sidebar">
+						<div class="aione-row">
+							
+						</div><!-- .aione-row -->
+					</div><!-- #aione_sidebar -->
+					<div id="aione_content" class="aione-content m-4 aione-border">
+						<div class="aione-row">
+
+							<div id="aione_page_header" class="aione-page-header">
+								<div class="aione-row">
+									<div class="aione-page-title-container">
+										<h3 class="m-3 light-blue darken-4">Images</h3>
+										<div class="clear"></div>
+									</div> <!-- .aione-page-title-container -->
+									<div class="clear"></div>
+								</div> <!-- .row -->
+							</div> <!-- #aione_page_header --> 
+
+							<div id="aione_page_content" class="">
+								<div class="aione-row">	
+									<div class="aione-page-content-primary p-20">
+										<div class="ar">
+										<div class="ac">
+											<div class="gallery gallery-columns-1 margin square transition-minimize-top">
+												<div class="gallery-item">
+													<div class="gallery-icon">
+														<img src="https://charliejohns.com/wp-content/uploads/2015/11/CJS_DEC1-300x300.jpg"/>
+													</div>
+													<div class="gallery-caption">
+														<h3>Image Title </h3>
+														<p>Image Description</p>
+													</div>
+													
+												</div>
+											</div>
+										</div>
+									</div>
+									</div>
+								</div> <!-- .aione-row -->
+							</div> <!-- #aione_page_content -->
+						</div><!-- .aione-row -->
+					</div><!-- #aione_content -->
+					<div class="clear"></div><!-- .clear -->
+				</div><!-- .aione-row -->
+			</div><!-- #aione_main -->
+			<div id="aione_footer" class="aione-footer">
+				<div class="aione-row">
+					&copy;2017 <a href="http://oxosolutions.com/" target="_blank">OXO Solutions</a>. All rights reserved. 
+				</div><!-- .aione-row -->
+			</div><!-- #aione_content --> 
+			<div class="clear"></div><!-- .clear -->
+		</div><!-- .aione-row -->
+	</div><!-- #aione_wrapper -->
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+   <script type="text/javascript">
+      $(window).on('load', function () {
+         // $('.append-content').load('test.html');
+         $('.aione-sidebar > .aione-row').load('sidenav.html');
+         $('.aione-header > .aione-row').load('_header.html');
+      });
+   </script>
+</html>
