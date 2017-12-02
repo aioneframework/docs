@@ -1,0 +1,35 @@
+.aione-sidebar:before{
+	background-color: #fff;
+	    border-right: 1px solid #d8d8d8;
+}
+.aione-nav.vertical ul li{
+	line-height: 40px
+}
+.aione-nav.vertical.light ul li.nav-item-selected > a{
+	background-color: #f8f8f8;
+	font-weight: 700
+}
+.aione-sidebar{
+	width: 280px
+}
+.aione-sidebar:before{
+	width: 280px
+}
+.aione-content{
+	width: calc(100% - 280px);
+}
+.aione-header{
+	background-color: #2d323e;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 279px;
+    z-index: 999;
+}
+.logo{
+	padding: 10px;
+	background: white;
+}
+code{
+	font-size: 12px
+}
