@@ -1,0 +1,74 @@
+.aione-title h4{
+	font-weight: 100;
+	color:#009688;
+}
+.aione-title h6{
+	color:#666666; 
+}
+
+
+.wrapper:after {
+    content: "";
+    display: block;
+    width: 100%;
+    clear: both;
+}
+.aione-wrapper.layout-header-left{  }
+.aione-wrapper.layout-header-left .aione-header,
+.aione-wrapper.layout-header-right .aione-header{
+	width: 280px;
+	position: relative;
+    background: #FFFFFF;
+}
+.aione-wrapper.layout-header-left .aione-header{
+	float: left;
+}
+.aione-wrapper.layout-header-right .aione-header{
+	float: right;
+}
+.aione-wrapper.layout-header-left .aione-header > .wrapper{
+	border-right: 1px solid #e8e8e8;
+}
+.aione-wrapper.layout-header-right .aione-header > .wrapper{
+	border-left: 1px solid #e8e8e8;
+}
+.aione-wrapper.layout-header-left .aione-main,
+.aione-wrapper.layout-header-right .aione-main{
+	float: left;
+	width: calc(100% - 290px);
+	padding-top: 0;
+}
+.aione-wrapper.layout-header-left .aione-main{
+	margin-left: 10px;
+}
+.aione-wrapper.layout-header-right .aione-main{
+	margin-right: 10px;
+}
+
+
+
+.logo{
+	padding: 5px;
+}
+.aione-page-title{
+	font-size: 30px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0 10px;
+    font-weight: 100;
+    color: #168dc5;
+    border-bottom: 1px solid #168dc5;
+}
+.aione-sidebar:before{
+	background-color: #fff;
+	    border-right: 1px solid #d8d8d8;
+}
+.aione-nav.vertical ul li{
+	line-height: 40px
+}
+.aione-nav.vertical.light ul li.nav-item-selected > a{
+	background-color: #f8f8f8;
+}
+
+
+ 
