@@ -3,220 +3,134 @@
 <head>
 	<title>Aione Framework</title>
 	<!-- Global stylesheets -->
-	<link rel="stylesheet" type="text/css" href="http://aioneframework.com/aioneframework/assets/css/aione.min.css">
-	<style type="text/css">
-	  .aione-nav>ul>li>ul{
-	     display: block
-	  }
-	</style>
+	<link rel="stylesheet" type="text/css" href="http://manage.aioneframework.com/aioneframework/assets/css/aione.min.css">
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600,800">
+	<link rel="stylesheet" type="text/css" href="assets/css/docs.css">
+	<script type="text/javascript" src="http://manage.aioneframework.com/aioneframework/assets/js/vendor.min.js"></script>
+	<script type="text/javascript" src="http://manage.aioneframework.com/aioneframework/assets/js/aione.min.js"></script>
+	<script type="text/javascript" src="assets/js/script.js"></script>
+
 </head>
-<body class="">
-	<div id="aione_wrapper" class="aione-wrapper aione-layout-wide aione-theme-arcane">
-		<div class="aione-row">
-			<div id="aione_header" class="aione-header">
-				<div class="aione-row">
-					
+<body>
+	<div id="aione_wrapper" class="aione-wrapper layout-header-left aione-layout-wide aione-theme-arcane">
+		<div class="wrapper">
+			
+			<div id="aione_header" class="aione-header"></div><!-- .aione-header -->
+			<div id="aione_main" class="aione-main fullwidth">
+				<div class="wrapper">
+					<!--
+					<div id="aione_slider" class="aione-slider"></div>
+					--> 
+					<!-- .aione-slider -->
+					<div id="aione_pagetitle" class="aione-pagetitle">
+						<div class="wrapper">
+							<div class="aione-title">
+								<h3 class="aione-page-title">Getting Started</h3>
+							</div><!-- .aione-title -->
+						</div> <!-- .wrapper -->
+					</div><!-- .aione-pagetitle -->
+					<div id="aione_content" class="aione-content">
+						<div class="wrapper">
+							<div id="aione_page_content" class="aione-page-content">
+								<div class="wrapper">
+									<div class="ar m-20">
+							  			<div class="aione-border mb-30">
+				                                   <div class="bg-grey bg-lighten-4 aione-border-bottom">
+				                                        <h5 class="m-0 p-10">Buttons Varieties<i class="aione-float-right fa fa-code"></i></h5> 
 
-		</div><!-- .aione-row -->
-	</div><!-- #aione_header -->
-	<div id="aione_main" class="aione-main">
-		<div class="aione-row">
-			<div id="aione_sidebar" class="aione-sidebar">
-				<div class="aione-row">
-					
-				</div><!-- .aione-row -->
-			</div><!-- #aione_sidebar -->
-			<div id="aione_content" class="aione-content m-4 aione-border">
-				<div class="aione-row">
+				                                   </div>
+				                                   <div class=" pv-20 ph-10">
+				                                   		<div class="aione-border-bottom pb-30">
+				                                   			<h6>Basic Buttons</h6>
+					                                       	<div>
+					                                       		<button class="">Basic</button>
+					                                       		<button class="bg-light-blue bg-darken-2">Primary</button>
+					                                       		<button class="bg-green bg-darken-2">Accent</button>
+					                                       		<button class="bg-red bg-lighten-2">Warn</button>
+					                                       		<button class="btn disabled">Disabled</button>
+					                                       		<button>Link</button>
+					                                       	</div>
+				                                   		</div>
+					                                    <div class="aione-border-bottom pb-30">
+				                                   			<h6>Raised Buttons</h6>
+					                                       	<div>
+					                                       		<button class="aione-button">Basic</button>
+					                                       		<button class="aione-button light-blue darken-2">Primary</button>
+					                                       		<button class="aione-button green darken-2">Accent</button>
+					                                       		<button class="aione-button red lighten-2">Warn</button>
+					                                       		<button class="btn disabled">Disabled</button>
+					                                       		<button class="aione-button">Link</button>
+					                                       	</div>
+				                                   		</div>   	
+				                                   		<div class="aione-border-bottom pb-30">
+				                                   			<h6>Icon Buttons</h6>
+					                                       	<div>
+					                                       		<button class="btn-floating btn-large mr-10"><i class="fa fa-pencil"></i></button>
+					                                       		<button class="btn-floating btn-large mr-10"><i class="fa fa-pencil"></i></button>
+					                                       		<button class="btn-floating btn-large mr-10"><i class="fa fa-pencil"></i></button>
+					                                       		<button class="btn-floating btn-large mr-10"><i class="fa fa-pencil"></i></button>
+					                                       		<button class="btn-floating btn-large mr-10 disabled"><i class="fa fa-pencil"></i></button>
+					                                       		<button class="btn-floating btn-large mr-10"><i class="fa fa-pencil"></i></button>
+					                                       		
+					                                       	</div>
+				                                   		</div>   	
+				                                   		<div class="aione-border-bottom pb-30">
+				                                   			<h6>Fab Buttons</h6>
+					                                       	<div>
+					                                       		<button class="btn-floating btn-large mr-10">Basic</button>
+					                                       		<button class="btn-floating btn-large mr-10">Primary</button>
+					                                       		<button class="btn-floating btn-large mr-10">Accent</button>
+					                                       		<button class="btn-floating btn-large mr-10">Warn</button>
+					                                       		<button class="btn-floating btn-large mr-10 disabled">Disabled</button>
+					                                       		<button class="btn-floating btn-large mr-10">Link</button>
+					                                       	</div>
+				                                   		</div>
+				                                   		<div class="aione-border-bottom pb-30">
+				                                   			<h6>Mini Fab Buttons</h6>
+					                                       	<div>
+					                                       		<button class="btn-floating mr-10">Basic</button>
+					                                       		<button class="btn-floating mr-10">Primary</button>
+					                                       		<button class="btn-floating mr-10">Accent</button>
+					                                       		<button class="btn-floating mr-10">Warn</button>
+					                                       		<button class="btn-floating mr-10 disabled">Disabled</button>
+					                                       		<button class="btn-floating mr-10">Link</button>
+					                                       	</div>
+				                                   		</div>   	
+				                                   </div>
+				                               </div>
 
-					<div id="aione_page_header" class="aione-page-header">
-						<div class="aione-row">
-							<div class="aione-page-title-container">
-								<h4 class="m-3 light-blue darken-4">Buttons</h4>
-								<div class="clear"></div>
-							</div> <!-- .aione-page-title-container -->
-							<div class="clear"></div>
-						</div> <!-- .row -->
-					</div> <!-- #aione_page_header --> 
-
-					<div id="aione_page_content" class="aione-page-content">
-						<div class="aione-row">	
-							<div class="aione-page-content-primary">
-							<div class="ar m-20">
-							    <div class="Buttons">
-							       <!--  <h4 class="">Button Example</h4>
-							        <p>Use the button classes on an, <span class="bg-pink white">.aione-button</span> or <span class="bg-pink white">.aione-button:hover</span> <span class="bg-pink white">.aione-button-square</span> element.</p>
-							        <br>
-							        <div class="ar aione-border p-20 aione-align-center">
-							            <div class="ac s33 m33 l33 mt-10 aione-border-right">
-							       		 <button class="aione-button">button</button>
-								        </div>
-								         <div class="ac s33 m33 l33 mt-10 aione-border-right">
-							       		 <button class="btn-flat">btn-flat</button>
-								        </div>
-									    <div class="ac s33 m33 l33 aione-border-right">
-								       		<button class="aione-button-square">Aione-Button-Square</button>
-								        </div>
-							        </div>
-							         
-							         <div class="ar aione-border mt-20 p-20 aione-align-center">
-							            <div class="ac s33 m33 l33 mt-10 aione-border-right">
-							       		 <button class="btn-flat disabled">btn-flat disabled</button>
-								        </div>
-								        <div class="ac s33 m33 l33 aione-border-right">
-								       		<button class="btn-large">btn-large</button>
-								        </div>
-									   
-							        </div>
-							           <div class="ar aione-border mt-20 p-20 aione-align-center">
-							            <div class="ac s33 m33 l33 mt-10 aione-border-right">
-							       		 <button class="btn disabled">disabled</button>
-								        </div>
-								        <div class="ac s33 m33 l33 aione-border-right">
-								       		<button class="btn-flat disabled">btn-flat disabled</button>
-								        </div>
-									    <div class="ac s33 m33 l33 aione-border-right">
-								       		<button class="btn-floating disabled">btn-floating.disabled</button>
-								        </div>
-							        </div>
-							          <div class="ar aione-border mt-20 p-20 aione-align-center">
-							            <div class="ac s33 m33 l33 mt-10 aione-border-right">
-							       		 <button class="btn-floating">btn-floating</button>
-								        </div>
-								        
-									    <div class="ac s33 m33 l33 aione-border-right">
-								       		<button class="btn disabled">btn disabled</button>
-								        </div>
-							        </div>
-							          <div class="ar aione-border mt-20 p-20 aione-align-center">
-							            <div class="ac s33 m33 l33 mt-10 aione-border-right">
-							       		 <button class="disabled btn-large">disabled btn-large</button>
-								        </div>
-								        <div class="ac s33 m33 l33 aione-border-right">
-								       		<button class="btn-floating btn-large">btn-floating btn-large</button>
-								        </div> 
-									    <div class="ac s33 m33 l33 aione-border-right">
-								       		<button class="btn-floating btn-large halfway-fab">btn disabled</button>
-								        </div>
-							        </div>
-							         <div class="ar aione-border mt-20 p-20 aione-align-center">
-							            <div class="ac s33 m33 l33 mt-10 aione-border-right">
-							       		 <button class="btn-floating halfway-fab left">disabled btn-large</button>
-								        </div>
-								        <div class="ac s33 m33 l33 aione-border-right">
-								       		<button class="btn-floating btn-large">btn-floating btn-large</button>
-								        </div> 
-									    <div class="ac s33 m33 l33 aione-border-right">
-								       		<button class="btn-floating btn-large halfway-fab">btn disabled</button>
-								        </div>
-							        </div>
-							      </div> -->
-							     <!--  <div class="ac s100 m50 l100 mt-15">
-						            <div class="field-wrapper ac field-wrapper-type-code small">
-						        	<div class="field field-type-code">
-							    	<textarea id="Buttons" class="bg-black white">
-							         <button class="aione-button">button</button>
-							         <button class="aione-button:hover">aione-button:hover</button>
-							         <button class="aione-button-square">aione-button-square</button>
-							   		</textarea>
-							        	<div id="Buttons_editor" class="aione-code-editor" data-mode="html"></div>
-							        	</div>
-							        </div>
-							    </div> -->
-							    
+										</div> 
+								</div>
 							</div>
-								 <div class="aione-border mb-30">
-	                                   <div class="bg-grey bg-lighten-4 aione-border-bottom">
-	                                        <h5 class="m-0 p-10">Buttons Varieties<i class="aione-float-right fa fa-code"></i></h5> 
+						</div><!-- .wrapper -->
+					</div><!-- .aione-content -->
+					<div id="aione_footer" class="aione-footer"></div><!-- .aione-footer -->
+					<div id="aione_copyright" class="aione-copyright"></div><!-- .aione-copyright -->
+				</div><!-- .wrapper -->
+			</div><!-- .aione-main -->
 
-	                                   </div>
-	                                   <div class=" pv-20 ph-10">
-	                                   		<div class="aione-border-bottom pb-30">
-	                                   			<h6>Basic Buttons</h6>
-		                                       	<div>
-		                                       		<button class="">Basic</button>
-		                                       		<button class="bg-light-blue bg-darken-2">Primary</button>
-		                                       		<button class="bg-green bg-darken-2">Accent</button>
-		                                       		<button class="bg-red bg-lighten-2">Warn</button>
-		                                       		<button class="btn disabled">Disabled</button>
-		                                       		<button>Link</button>
-		                                       	</div>
-	                                   		</div>
-		                                    <div class="aione-border-bottom pb-30">
-	                                   			<h6>Raised Buttons</h6>
-		                                       	<div>
-		                                       		<button class="aione-button">Basic</button>
-		                                       		<button class="aione-button light-blue darken-2">Primary</button>
-		                                       		<button class="aione-button green darken-2">Accent</button>
-		                                       		<button class="aione-button red lighten-2">Warn</button>
-		                                       		<button class="btn disabled">Disabled</button>
-		                                       		<button class="aione-button">Link</button>
-		                                       	</div>
-	                                   		</div>   	
-	                                   		<div class="aione-border-bottom pb-30">
-	                                   			<h6>Icon Buttons</h6>
-		                                       	<div>
-		                                       		<button class="btn-floating btn-large mr-10"><i class="fa fa-pencil"></i></button>
-		                                       		<button class="btn-floating btn-large mr-10"><i class="fa fa-pencil"></i></button>
-		                                       		<button class="btn-floating btn-large mr-10"><i class="fa fa-pencil"></i></button>
-		                                       		<button class="btn-floating btn-large mr-10"><i class="fa fa-pencil"></i></button>
-		                                       		<button class="btn-floating btn-large mr-10 disabled"><i class="fa fa-pencil"></i></button>
-		                                       		<button class="btn-floating btn-large mr-10"><i class="fa fa-pencil"></i></button>
-		                                       		
-		                                       	</div>
-	                                   		</div>   	
-	                                   		<div class="aione-border-bottom pb-30">
-	                                   			<h6>Fab Buttons</h6>
-		                                       	<div>
-		                                       		<button class="btn-floating btn-large mr-10">Basic</button>
-		                                       		<button class="btn-floating btn-large mr-10">Primary</button>
-		                                       		<button class="btn-floating btn-large mr-10">Accent</button>
-		                                       		<button class="btn-floating btn-large mr-10">Warn</button>
-		                                       		<button class="btn-floating btn-large mr-10 disabled">Disabled</button>
-		                                       		<button class="btn-floating btn-large mr-10">Link</button>
-		                                       	</div>
-	                                   		</div>
-	                                   		<div class="aione-border-bottom pb-30">
-	                                   			<h6>Mini Fab Buttons</h6>
-		                                       	<div>
-		                                       		<button class="btn-floating mr-10">Basic</button>
-		                                       		<button class="btn-floating mr-10">Primary</button>
-		                                       		<button class="btn-floating mr-10">Accent</button>
-		                                       		<button class="btn-floating mr-10">Warn</button>
-		                                       		<button class="btn-floating mr-10 disabled">Disabled</button>
-		                                       		<button class="btn-floating mr-10">Link</button>
-		                                       	</div>
-	                                   		</div>   	
-	                                   </div>
-	                               </div>
-
-
-							</div> <!-- .aione-page-content-primary -->	
-							<div class="aione-page-content-secondry">		
-							</div> <!-- .aione-page-content-secondry -->
-						</div> <!-- .aione-row -->
-					</div> <!-- #aione_page_content -->
-				</div><!-- .aione-row -->
-			</div><!-- #aione_content -->
-			<div class="clear"></div><!-- .clear -->
-		</div><!-- .aione-row -->
-	</div><!-- #aione_main -->
-	<div id="aione_footer" class="aione-footer">
-		<div class="aione-row">
-			&copy;2017 <a href="http://oxosolutions.com/" target="_blank">OXO Solutions</a>. All rights reserved. 
-		</div><!-- .aione-row -->
-	</div><!-- #aione_content --> 
-	<div class="clear"></div><!-- .clear -->
-		</div><!-- .aione-row -->
-	</div><!-- #aione_wrapper -->
+		</div><!-- .wrapper -->
+	</div><!-- .aione-wrapper -->
 </body>
-<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-   <script type="text/javascript">
-      $(window).on('load', function () {
-         // $('.append-content').load('test.html');
-         $('.aione-sidebar > .aione-row').load('sidenav.html');
-         $('.aione-header > .aione-row').load('_header.html');
-
-      });
-   </script>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
