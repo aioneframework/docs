@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Aione Framework</title>
+      <!-- Global stylesheets -->
+      <link rel="stylesheet" type="text/css" href="http://aioneframework.com/aioneframework/assets/css/aione.min.css">
+      <style type="text/css">
+         .aione-nav>ul>li>ul{
+         display: block
+         }
+      </style>
+   </head>
+   <body class="">
+      <div id="aione_wrapper" class="aione-wrapper aione-layout-wide aione-theme-arcane">
+      <div class="aione-row">
+      <div id="aione_header" class="aione-header">
+         <div class="aione-row">
+          <div class="ar">
+            <div class="ac s100 m100 l00 bg-red bg-lighten-1 p-25">
+              <div class="ac= s100 m100 l33">
+             <span> <i class="fa fa-calendar white darken-1"></i><span style="color:#fff;font-weight:800;">  Sydney NSW 2052, Australia</span></span> 
+             </div>
+                        
+                     </div>
+
+
+
+              </div>
+
+            </div>
+
+
+          </div>
+         </div>
+         <!-- .aione-row -->
+      </div>
+      <!-- #aione_header -->
+      <div id="aione_main" class="aione-main">
+      <div class="aione-row">
+      <div id="aione_sidebar" class="aione-sidebar">
+         <div class="aione-row">
+         </div>
+         <!-- .aione-row -->
+      </div>
+      <!-- #aione_sidebar -->
+      <div id="aione_content" class="aione-content">
+      <div class="aione-row">
+      <div id="aione_page_header" class="aione-page-header">
+        <div class="ar">
+         <div class="ac l50 m50 s50 pv-8">
+        <nav id="aione_nav" class="aione-nav horizontal slide-up">
+        <ul id="aione_menu" class="aione-menu aione-float-right">
+          <li class="aione-nav-item level0"><a href="index.html"><span class="nav-item-text" data-hover="Home">Home</span></a></li>
+          <li class="aione-nav-item level0"><a href="about.html"><span class="nav-item-text" data-hover="About">About</span></a></li>
+          <li class="aione-nav-item level0"><a href="http://aioneframework.com/docs" target="_blank"><span class="nav-item-text" data-hover="Docs">Docs</span></a></li>
+          <li class="aione-nav-item level0"><a href="http://aioneframework.com/play" target="_blank"><span class="nav-item-text" data-hover="Play">Play</span></a></li>
+          <li class="aione-nav-item level0"><a href="http://aioneframework.com/builder" target="_blank"><span class="nav-item-text" data-hover="Builder">Builder</span></a></li>
+        </ul>
+          </nav>
+        </div>
+        
+         <div class="aione-row">
+            <div class="aione-page-title-container">
+               <h3 class="aione-page-title"></h3>
+               <div class="clear"></div>
+            </div>
+            <!-- .aione-page-title-container -->
+            <div class="clear"></div>
+         </div>
+         <!-- .row -->
+      </div>
+      <!-- #aione_page_header --> 
+      <div id="aione_page_content" class="aione-page-content">
+      <div class="aione-row">
+      <div class="aione-page-content-primary">
+           
+          </div>
+         </div>
+ </div>
+                              
+                                 
+                                 
+                                 
+                                 <!-- .aione-page-content-primary --
+                                 
+                                 
+                                 
+                                 </div> <!-- .aione-page-content-secondry -->
+                           </div>
+                           <!-- .aione-row -->
+                        </div>
+                        <!-- #aione_page_content -->
+                     </div>
+                     <!-- .aione-row -->
+                  </div>
+                  <!-- #aione_content -->
+                  <div class="clear"></div>
+                  <!-- .clear -->
+               </div>
+               <!-- .aione-row -->
+            </div>
+            <!-- #aione_main -->
+            <div id="aione_footer" class="aione-footer">
+               <div class="aione-row p-20">
+                <div class="ar bg-blue-grey bg-darken-4 p-20">
+                                <div class="ac s100 m100 l30">
+                                <div class="aoine-border border-yellow border-darken-4 p-10 whte accent-4 mt-20">
+                                 <div class="white lighten-4">  &copy;2017 <a href="http://oxosolutions.com/" target="_blank">OXO Solutions</a>. All rights reserved. </div>
+                                 
+                                 </div>
+                                  </div>
+                                   
+                                  <div class="ac s100 m100 l40">
+                                <div class="aoine-border border-yellow border-darken-4 p-10 whte accent-4 mt-20">
+                                 <span class=" white lighten-4">FACEBOOK </span>  <span class=" white lighten-4 m-10">TWITTER</span> <span class=" white lighten-4 m-10">LINKEDIN</span>  <span class=" white lighten-4 m-10">INSTAGRAM</span>
+                                  </div>
+                                  </div>
+                         
+                                 
+                                
+                                  <div class="ac s100 m100 l30">
+                                <div class="aoine-border border-yellow border-darken-4">
+                                <span class="bg-light-blue bg-darken-4orange accent-4 white lighten-4 p-1p m-15p" style="position: relative;
+                                  top: 28px;">BACK TO TOP</span>
+                                  </div>
+                                 </div>
+
+                 
+               </div>
+               <!-- .aione-row -->
+            </div>
+            <!-- #aione_content --> 
+            <div class="clear"></div>
+            <!-- .clear -->
+         </div>
+         <!-- .aione-row -->
+      </div>
+      <!-- #aione_wrapper -->
+   </body>
+   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+   <script type="text/javascript">
+      $(window).on('load', function () {
+      // $('.append-content').load('test.html');
+      $('.aione-sidebar > .aione-row').load('sidenav.html');
+      $('.aione-header > .aione-row').load('_header.html');
+      });
+   </script>
+</html>
