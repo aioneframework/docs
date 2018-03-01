@@ -4,7 +4,7 @@
 	<title>Aione Framework Documentation</title>
 	<!-- Aione framework website, 3D websites, Grid system -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="identifier-url" content="https://aioneframework.com/" />
+	<meta name="identifier-url" content="https://aioneframework.com/"/>
 	<meta name="title" content="Aione Framework Documentation" />
 	<meta name="description" content="Official documentation for Aione framework, All-in-one front end framework for designing websites and web applications and mobile applications" />
 	<meta name="abstract" content="Aione framework code playground to edit html code and live preview the output" />
@@ -51,33 +51,109 @@
 								<div class="wrapper">
 									<section>
 										<div class="aione-title pv-5">
+											<h3>Introduction</h3>
+											<p class="pv-10 line-height-22">Aione Framework is ALL-IN-ONE CSS Framework make responsive websites, web applications and mobile applications using 100 column grid system.The only frontend framework to make Progressive Web Applications</p>
 											<h4>Following are the four way to getting start with Aione Framework </h4>
 										</div>
-										<div class="mv-30">
-											<h5>1. CDN</h5>
-											<div class="bg-grey bg-lighten-4 p-10 line-height-26">
-												https://cdn.aioneframework.com/assets/css/aione.min.css<br>
-												https://cdn.aioneframework.com/assets/js/aione.min.js<br>
-												https://cdn.aioneframework.com/assets/js/vendor.min.js
+										<div class="aione-border p-20 mb-10">
+											<!-- <div class="pb-20">
+												<h4 class="m-0">CSS CDN</h4>
+												<p class="pv-10">Here are the aioneframework CSS CDN files:</p>
+												<p class="pb-10">Copy-paste the stylesheet<span style="color:#168dc5;"> &lt;link&gt;</span> into your <span style="color:#168dc5;"> &lt;head&gt;</span> before all other stylesheets to load our CSS.</p>
+												<div class="ar">
+												    <div class="ac l80 bg-grey bg-lighten-4 p-10 line-height-26 aione-border">
+												    <p class="red lighten-1" id="css_file"><span style="color:#168dc5;"> &lt;link ref="stylesheet" href="https://cdn.aioneframework.com/assets/css/aione.min.css"&gt;</span></p>
+												</div>
+												    <div class="ac l20 aione-align-center">
+												    	<button  data-clipboard-target="#css_file" class="clipboard aione-button aione-button-small fullwidth bg-grey bg-lighten-4 black">copy</button></div>
+												</div>
+											</div>	
+											<div class="pb-20">
+												<h4 class="m-0"> Jquery CDN</h4>
+												<p class="pv-10">Here are the aioneframework Jquery CDN files:</p>
+												<p class="pb-10"> Place the following <span style="color:#168dc5;"> &lt;script&gt;</span> near the end of your pages, right before the closing <span style="color:#168dc5;"> &lt;body&gt;</span> tag, to enable them.</p>
+												<div class="ar">
+												    <div class="ac l80 bg-grey bg-lighten-4 line-height-26" id="jquery_file">
+													<p class="red lighten-1"><span style="color:#168dc5;"> &lt;script src="https://cdn.aioneframework.com/assets/js/vendor.min.js"&gt;</span><span style="color:#168dc5;">&lt;/script&gt;</span></p>
+													<p class="red lighten-1"><span style="color:#168dc5;"> &lt;script src="https://cdn.aioneframework.com/assets/js/aione.min.js"&gt;</span><span style="color:#168dc5;">&lt;/script&gt;</span></p>
+												</div>
+												<div class="ac l20 aione-align-center"><button data-clipboard-target="#jquery_file" class="clipboard aione-button aione-button-small fullwidth bg-grey bg-lighten-4 black">copy</button></div>
+												
 											</div>
 										</div>
-										<span class="line-height-40 mb-20">OR</span>
+										<div class="">
+											<h4>Meta Tag For Responsive Site</h4>
+											<div class="ar">
+											    <div class="ac l80 bg-grey bg-lighten-4 p-10 line-height-26 aione-border">
+											    	<p class="red lighten-1" id="meta_tag"><span style="color:#168dc5;">&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;</span></p>
+												</div>
+											    <div class="ac l20 aione-align-center">
+											    	<button data-clipboard-target="#meta_tag" class="clipboard aione-button aione-button-small fullwidth bg-grey bg-lighten-4 black">copy</button>
+											    </div>
+											</div>
+										</div> -->
+										<!-- <div class="">
+											<h4 class="">Basic HTML</h4>
+											<p class="line-height-22">Copy the HTML below to begin working with a minimal Aioneframework document.</p>	
+											<div class="aione-border p-20">
+												<p class="line-height-22 red"><span> &lt;!doctype html&gt;</span></p>
+												<p class="line-height-22 blue"><span>&lt;html&gt;</span></p>
+												<p class="line-height-22 teal pl-20"><span>&lt;head&gt;</span></p>
+												<p class="line-height-22 pl-20 blue"><span>&lt;title&gt;</span>This is Aione Framework<span>&lt;/title&gt;</span></p>
+												<p class="red lighten-1 line-height-22 pl-25"><span style="color:#168dc5;"> &lt;link ref="stylesheet" href="https://cdn.aioneframework.com/assets/css/aione.min.css"&gt;</span></p>
+												<p class="line-height-22 pl-20 teal"><span>&lt;/head&gt;</span></p>
+												<p class="line-height-22 pl-20 teal"><span>&lt;body&gt;</span></p>
+												<p class="red lighten-1 line-height-22 pl-25"><span style="color:#168dc5;"> &lt;script src="https://cdn.aioneframework.com/assets/js/vendor.min.js"&gt;</span><span style="color:#168dc5;"> &lt;/script &gt;</span></p>
+													<p class="red lighten-1 line-height-22 pl-25"><span style="color:#168dc5;"> &lt;script src="https://cdn.aioneframework.com/assets/js/aione.min.js"&gt;</span><span style="color:#168dc5;"> &lt;/script &gt;</span></p>
+												
+												<p class="line-height-22 pl-20 teal"><span>&lt;/body&gt;</span></p>
+												<p class="line-height-22 blue"><span>&lt;/html&gt;</span></p>
+											</div>
+										</div> -->
 										
-										<div class="mv-30">
-											<h5>2. Download Zip</h5>
-											<div class="font-size-17 line-height-26">
+<div class="aione-code-editor-wrapper">
+<div id="input_css_code_editor" class="aione-code-editor">
+	<h4 class="m-0">Starter Template</h4>
+	<p class="pv-10">Copy the HTML below to begin working with a minimal Aioneframework document.</p>	
+	<textarea id="textarea" class="aione-align-left" rows="15">
+	<!doctype html>
+	<html lang="en">
+	<head>
+	<-- Required Meta Tag-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<--Aioneframework CSS-->
+	<link ref="stylesheet" href="https://cdn.aioneframework.com/assets/css/aione.min.css">
+	<title>Aioneframework</title>
+	</head>
+	<body>
+		<h2>Aioneframework</h2>
+		<--Jquery Files-->
+		<script src="https://cdn.aioneframework.com/assets/js/vendor.min.js"></script>
+		<script src="https://cdn.aioneframework.com/assets/js/aione.min.js"></script>
+	</body>
+	</html>
+	</textarea>
+</div>
+</div>
+
+										
+										</div>
+										<div class="p-20 aione-border mb-10">
+											<h4 class="mv-20">Download Zip</h4>
+											<div class="line-height-26">
 												Download complete library of CSS and JavaScript files and include it in your project. The complete library is delivered as a compressed file in zip format. Extract the zip file into your project assets and include required files in your project.
 											</div>
 											<div class="pt-20">
-												<a target="_blank" href="https://github.com/aioneframework/aioneframework/archive/master.zip"><button>Download</button></a>
+												<a target="_blank" href="https://github.com/aioneframework/aioneframework/archive/master.zip">
+													<button style="background:#168dc5;"><i class="fa fa-download"></i> Download</button>
+												</a>
 											</div>
 										</div>
-										<span class="line-height-40">OR</span>
-										
-										<div class="mv-30">
-											<h5>3. Download Files</h5>
-											<div>Download individual files include in your project.</div>
-											<table class="">
+										<div class="aione-border p-20 mb-10">
+											<h4 class="mv-10-0"> Download Files</h4>
+											<p class="mb-10">Download individual files and include in your project.</p>
+											<div class="aione-table">
+												<table class="compact">
 												<thead>
 													<tr>
 														<th>File</th>
@@ -103,17 +179,18 @@
 													</tr>
 												</tbody>
 											</table>
+											</div>
 										</div>
-										<span class="line-height-40">OR</span>
-										<div class="mv-30">
-											<h5>4. Bower</h5>
-											<div class="font-size-17 line-height-26">Download complete library of CSS and JavaScript files and include it in your project. The complete library is delivered as a compressed file in zip format. Extract the zip file into your project assets and include required files in your project.</div>
+										
+										<div class="aione-border p-20 mb-10">
+											<h4 class="mv-10-0">Bower</h4>
+											<div class="line-height-24">Download complete library of CSS and JavaScript files and include it in your project. The complete library is delivered as a compressed file in zip format. Extract the zip file into your project assets and include required files in your project.</div>
 											<div class="ar pt-20">
 												<div class="ac s100 m80 l80 field">
 													<input id="install_via_bower" type="text" value="bower install aioneframework --save" />
 												</div>
 												<div class="ac s100 m20 l20">
-													<button data-clipboard-target="#install_via_bower" class="clipboard aione-button aione-button-small fullwidth">Copy</button>
+													<button data-clipboard-target="#install_via_bower" class="clipboard aione-button aione-button-small fullwidth black">Copy</button>
 												</div>
 											</div>
 										</div>
