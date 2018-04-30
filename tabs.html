@@ -33,211 +33,755 @@
             <div class="wrapper">
               <div id="aione_page_content" class="aione-page-content">
                 <div class="wrapper">
-                  <div id="project_tabs" class="project-tabs">
-                    <div class="aione-tabs">
-                      <h3>Horizontal Theme-Pastel</h3>
-                      <div id="aione_tabs_nav" class="aione-tabs-nav horizontal theme-pastel">
-                      <ul>
-                          <li data-target="tab_objective" class="active"> 
-                              <div class="aione-tab-icon"><i class="ion-ios-analytics-outline"></i></div>
-                              Home
-                          </li>
-                          <li data-target="tab_about">
-                              <div class="aione-tab-icon"><i class="ion-ios-keypad-outline"></i></div>
-                              About
-                          </li>
-                          <li data-target="tab_service">
-                              <div class="aione-tab-icon"><i class="ion-ios-infinite-outline"></i></div>
-                              Service
-                          </li>
-                          <li data-target="tab_feature">
-                              <div class="aione-tab-icon"><i class="ion-ios-calendar-outline"></i></div>
-                              Feature
-                          </li>
-                          <li data-target="tab_partners">
-                              <div class="aione-tab-icon"><i class="ion-ios-world-outline"></i></div>
-                              Partners
-                          </li>
-                          <li data-target="tab_testimonials">
-                              <div class="aione-tab-icon"><i class="ion-ios-person-outline"></i></div>
-                              Testimonials
-                          </li>
-                      </ul>
+                  <section class="">
+<script type="text/javascript">
+    $(document).ready(function(){
+        $( ".aione-tabs > .nav > *" ).click(function(e) {
+            e.preventDefault();
+            $(this).addClass("active").siblings().removeClass('active');
+            var target = $(this).attr("data-target");
+            if(target  != undefined){
+                $(target).addClass("active").siblings().removeClass('active');
+            }
+        });
+
+        $(".aione-target").click(function(e) {
+            e.preventDefault();
+            var target = $(this).attr("data-target");
+            if(target  != undefined){
+                //$(target).addClass("active").siblings().removeClass('active');
+                $(target).show().siblings().hide();
+            }
+        });
+        $(".options").click(function(e) {
+            var options = "aione-tabs";
+            var options_data = $(".options form").serializeArray();
+            jQuery.each( options_data, function( index, field ) {
+              options += " " + field.value;
+            });
+            $( "#aione_tabs").attr('class',options);
+        });
+
+        
+    })
+    // setTimeout(function(){
+    //    window.location.reload(1);
+    // }, 3000);
+</script> 
+<style type="text/css">
+
+/***************************************
+Aione Tabs
+***************************************/
+
+.aione-tabs {
+}
+.aione-tabs:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+/** nav **/
+.aione-tabs .nav{
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.aione-tabs .nav:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+.aione-tabs .nav > *{
+  margin:0;
+  padding:6px 15px;
+  color: #484848;
+  font-size: 17.6px;
+  line-height: 1.5;
+  cursor: pointer;
+  box-shadow: none;
+  position: relative;
+  -webkit-transition:all 250ms ease-in-out;
+     -moz-transition:all 250ms ease-in-out;
+          transition:all 250ms ease-in-out;
+}
+.aione-tabs .nav > *:hover{
+  color: #444444;
+}
+.aione-tabs .nav > .active{
+}
+
+.aione-tabs .nav > .active:hover{
+}
+/** content **/
+.aione-tabs .content > *{
+  display:none;
+}
+.aione-tabs .content > .active{
+  display:block;
+}
+
+/*************************************
+AIONE TABS HORIZONTAL
+***************************************/
+.aione-tabs.horizontal > .nav > *{
+  display: inline-block;
+  text-align: center;
+}
+.aione-tabs.horizontal.margin > .nav > *{
+  margin-right: 15px;
+}
+
+.aione-tabs.horizontal.margin > .nav > *:last-child {
+  margin-right: 0;
+}
+.aione-tabs.horizontal.align-left > .nav{
+  text-align: left;
+}
+
+.aione-tabs.horizontal.align-right > .nav{
+  text-align: right;
+}
+.aione-tabs.horizontal.align-center > .nav{
+  text-align: center;
+}
+
+
+/*************************************
+AIONE TABS VERTICAL
+***************************************/
+.aione-tabs.vertical > .nav{
+  width:30%;
+  float: left;
+}
+.aione-tabs.vertical > .content{
+  width:68%;
+  float: right;
+}
+.aione-tabs.vertical.layout-right > .nav{
+  float: right;
+}
+.aione-tabs.vertical.layout-right > .content{
+  float: left;
+}
+.aione-tabs.vertical > .nav > *{
+    display: block;
+    text-align: left;
+    padding-left: 15px;
+}
+.aione-tabs.vertical.margin > .nav > *{
+  margin-bottom: 15px;
+}
+
+.aione-tabs.vertical.margin > .nav > *:last-child {
+  margin-bottom: 0;
+}
+.aione-tabs.vertical.align-left > .nav > *{
+  text-align: left;
+}
+
+.aione-tabs.vertical.align-right > .nav > *{
+  text-align: right;
+}
+.aione-tabs.vertical.align-center > .nav > *{
+  text-align: center;
+}
+
+
+
+
+/*************************************
+AIONE TABS Theme Clean
+***************************************/
+.aione-tabs.horizontal.theme-clean > .nav {
+  margin-bottom: 20px; 
+  border-bottom: 1px solid #e8e8e8;
+}
+.aione-tabs.horizontal.theme-clean > .nav > *{
+  border: 1px solid transparent;
+  border-bottom: none;
+  margin-right: 0px;
+}
+.aione-tabs.horizontal.theme-clean > .nav > *:hover{
+
+ }
+
+.aione-tabs.horizontal.theme-clean > .nav > .active{
+  border: 1px solid #E8E8E8;
+  border-bottom: none;
+}
+.aione-tabs.horizontal.theme-clean > .nav > .active:hover{
+
+}
+.aione-tabs.horizontal.theme-clean > .nav > *:after{
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  height: 1px;
+  left: 0;
+  right: 0;
+  -webkit-transition:all 250ms ease-in-out;
+     -moz-transition:all 250ms ease-in-out;
+          transition:all 250ms ease-in-out;
+}
+.aione-tabs.horizontal.theme-clean > .nav > .active:after{
+  background-color: #ffffff;
+}
+
+.aione-tabs.vertical.theme-clean > .nav{
+  border:1px solid #e8e8e8;
+}
+.aione-tabs.vertical.theme-clean > .nav > *{
+  border-bottom: 1px solid #e8e8e8;
+  margin-bottom: 0px;
+}
+
+.aione-tabs.vertical.theme-clean > .nav > *:hover{
+
+ }
+.aione-tabs.vertical.theme-clean > .nav > *:last-child {
+   border-bottom: none;
+}
+.aione-tabs.vertical.theme-clean > .nav > *:after{
+  content: '';
+  position: absolute;
+  width: 1px;
+  top: 0;
+  bottom: 0;
+  right: -1px;
+  -webkit-transition:all 250ms ease-in-out;
+     -moz-transition:all 250ms ease-in-out;
+          transition:all 250ms ease-in-out;
+}
+.aione-tabs.vertical.theme-clean > .nav > .active:after{
+  background-color: #ffffff;
+}
+.aione-tabs.vertical.theme-clean.layout-right > .nav > *:after{
+  left: -1px;
+  right: auto;
+}
+
+/*************************************
+AIONE TABS Theme bold
+***************************************/
+.aione-tabs.horizontal.theme-bold > .nav {
+  margin-bottom: 20px; 
+
+}
+.aione-tabs.horizontal.theme-bold > .nav > *{
+
+  border-bottom: none;
+  margin-right: 0px;
+}
+.aione-tabs.horizontal.theme-bold > .nav > *:hover{
+  background: #f2f2f2;
+ }
+
+.aione-tabs.horizontal.theme-bold > .nav > .active{
+
+  border-bottom: none;
+  background: #168dc5;
+  color: white;
+}
+.aione-tabs.horizontal.theme-bold > .nav > .active:hover{
+  background: #1570a6
+}
+
+.aione-tabs.vertical.theme-bold > .nav{
+ 
+}
+.aione-tabs.vertical.theme-bold > .nav > *{
+  border-bottom: 1px solid #e8e8e8;
+}
+.aione-tabs.vertical.theme-bold > .nav > .active{
+  border-bottom: 1px solid #168dc5;
+  background: #168dc5;
+  color: white;
+}
+.aione-tabs.vertical.theme-bold > .nav > .active:hover{
+  background: #1570a6;
+  border-bottom: 1px solid #1570a6;
+}
+.aione-tabs.vertical.theme-bold > .nav > *:hover{
+  background: #f2f2f2;
+}
+
+
+/*************************************
+AIONE TABS Theme Pointer
+***************************************/
+.aione-tabs.horizontal.theme-pointer > .nav{
+  margin-bottom: 20px;
+}
+.aione-tabs.horizontal.theme-pointer > .nav > *:after {
+    content: '';
+    display: none;
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -12px;
+    border-top: 16px solid #168dc5;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    -moz-transition: all 0.2s ease-in-out 0s;
+    -webkit-transition: all 0.2s ease-in-out 0s;
+    transition: all 0.2s ease-in-out 0s;
+}
+.aione-tabs.horizontal.theme-pointer > .nav > .active {
+    color: white;
+    background: #168dc5;
+    
+}
+.aione-tabs.horizontal.theme-pointer > .nav > .active:hover {
+    background: #1570a6;
+}
+.aione-tabs.horizontal.theme-pointer > .nav > .active:after {
+    display:block;
+    bottom: -16px;
+    border-top-color: #168dc5;
+}
+.aione-tabs.horizontal.theme-pointer > .nav > .active:hover:after{
+    border-top-color: #1570a6;
+}
+
+
+.aione-tabs.vertical.theme-pointer > .nav{
+  margin-bottom: 20px;
+}
+.aione-tabs.vertical.theme-pointer > .nav > *:after {
+    content: '';
+    display: none;
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: 0;
+    left: 100%;
+    border-top: 12px solid transparent;
+    border-left: 16px solid #168dc5;
+    border-right: 12px solid transparent;
+    -moz-transition: all 0.2s ease-in-out 0s;
+    -webkit-transition: all 0.2s ease-in-out 0s;
+    transition: all 0.2s ease-in-out 0s;
+}
+.aione-tabs.vertical.theme-pointer > .nav > .active {
+    color: white;
+    background: #168dc5;
+}
+.aione-tabs.vertical.theme-pointer > .nav > .active:hover {
+    background: #1570a6;
+}
+.aione-tabs.vertical.theme-pointer > .nav > .active:after {
+    display:block;
+    bottom: -16px;
+   /* border-top-color: #168dc5;*/
+}
+.aione-tabs.vertical.theme-pointer > .nav > .active:hover:after{
+    /*border-top-color: #1570a6;*/
+}
+/*************************************
+AIONE TABS Theme Arrow
+***************************************/
+.aione-tabs.horizontal.theme-pointer > .nav > *:after {
+    content: '';
+    display: none;
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -12px;
+    border-top: 16px solid #168dc5;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+   
+}
+.aione-tabs.horizontal.theme-pointer > .nav > .active:after {
+    display:block;
+    bottom: -16px;
+    border-top-color: #168dc5;
+   
+}
+.aione-tabs.vertical.theme-pointer > .nav > *:after {
+    content: '';
+    display: none;
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: 0;
+    right: 0;
+    top: calc( 50% - 12px );
+    border-top: 12px solid transparent;
+    border-left: 16px solid #168dc5;
+    border-bottom: 12px solid transparent;
+   
+}
+.aione-tabs.vertical.theme-pointer > .nav > *li:hover:after {
+    right: 10px;
+    border-color: #666666;
+}
+.aione-tabs.vertical.theme-pointer > .nav > *li.active:after {
+    border-color: #ffffff;
+    right: 10px;
+}
+
+/*************************************
+AIONE TABS THEME PASTEL
+***************************************/
+.aione-tabs.theme-pastel > .nav{
+  margin-bottom: 20px; 
+}
+.aione-tabs.theme-pastel > .nav > * {
+    color: #ffffff;
+}
+.aione-tabs.theme-pastel > .nav > *:hover {
+
+}
+.aione-tabs.theme-pastel > .nav > .active {
+   
+}
+
+.aione-tabs.theme-pastel > .nav > *:nth-child(1){background-color: #1e729a;}
+.aione-tabs.theme-pastel > .nav > *:nth-child(2){background-color: #54a7a7;}
+.aione-tabs.theme-pastel > .nav > *:nth-child(3){background-color: #dec383;}
+.aione-tabs.theme-pastel > .nav > *:nth-child(4){background-color: #ed8d75;}
+.aione-tabs.theme-pastel > .nav > *:nth-child(5){background-color: #ff8282;}
+.aione-tabs.theme-pastel > .nav > *:nth-child(6){background-color: #8296a0;}
+.aione-tabs.theme-pastel > .nav > *:nth-child(7){background-color: #1e729a;}
+.aione-tabs.theme-pastel > .nav > *:nth-child(8){background-color: #54a7a7;}
+.aione-tabs.theme-pastel > .nav > *:nth-child(9){background-color: #dec383;}
+.aione-tabs.theme-pastel > .nav > *:nth-child(10){background-color: #ed8d75;}
+.aione-tabs.theme-pastel > .nav > *:nth-child(11){background-color: #ff8282;}
+.aione-tabs.theme-pastel > .nav > *:nth-child(12){background-color: #8296a0;}
+
+.aione-tabs.theme-pastel > .nav > .active:nth-child(1):after{ border-top-color:#1e729a; }
+.aione-tabs.theme-pastel > .nav > .active:nth-child(2):after{ border-top-color:#54a7a7; }
+.aione-tabs.theme-pastel > .nav > .active:nth-child(3):after{ border-top-color:#dec383; }
+.aione-tabs.theme-pastel > .nav > .active:nth-child(4):after{ border-top-color:#ed8d75; }
+.aione-tabs.theme-pastel > .nav > .active:nth-child(5):after{ border-top-color:#ff8282; }
+.aione-tabs.theme-pastel > .nav > .active:nth-child(6):after{ border-top-color:#8296a0; }
+.aione-tabs.theme-pastel > .nav > .active:nth-child(7):after{ border-top-color:#1e729a; }
+.aione-tabs.theme-pastel > .nav > .active:nth-child(8):after{ border-top-color:#54a7a7; }
+.aione-tabs.theme-pastel > .nav > .active:nth-child(9):after{ border-top-color:#dec383; }
+.aione-tabs.theme-pastel > .nav > .active:nth-child(10):after{ border-top-color:#ed8d75; }
+.aione-tabs.theme-pastel > .nav > .active:nth-child(11):after{ border-top-color:#ff8282; }
+.aione-tabs.theme-pastel > .nav > .active:nth-child(12):after{ border-top-color:#8296a0; }
+
+
+/*************************************
+OVERRIDE
+***************************************/
+/*
+.aione-tabs > .content{
+  border:1px solid #e8e8e8;
+}
+*/
+
+
+</style>
+<div class="options ar aione-border mb-20">
+<form>
+    <div class="p-10 font-size-20 bg-grey bg-lighten-3">
+        Select Options to generate tabs
+    </div>
+    <div class="ar">
+        <div class="ac l25">
+            <div class="field-wrapper ">
+                <div class="field-label">
+                    <label for="input_radio">
+                        <h4 class="field-title">
+                            Select Direction
+                        </h4>
+                    </label>
+                </div>
+                <!-- field label-->
+                <div class="field field-type-radio">
+                    <div class="field-option">
+                        <input checked="checked" class="radio " id="horizontal" data-validation=" " name="direction" type="radio" value="horizontal">
+                        <label for="horizontal" class="field-option-label">Horizontal</label>
                     </div>
-                    <div id="aione_tabs_content" class="aione-tabs-content">
-                        <div id="tab_objective" class="active">
-                            <div class="objective">
-                                <div class="aione-title">
-                                   <h3 class="font-weight-100 teal lighten-3 m-0">Home</h3> 
+                    <div class="field-option">
+                        <input class="radio " id="vertical" data-validation=" " name="direction" type="radio" value="vertical">
+                        <label for="vertical" class="field-option-label">Vertical</label>
+                    </div>
+                </div>
+                <!-- field -->
+            </div>
+
+        </div>
+        <div class="ac l25">
+            <div class="field-wrapper ">
+                <div class="field-label">
+                    <label for="input_radio">
+                        <h4 class="field-title">
+                            Select Text Alignment
+                        </h4>
+                    </label>
+                </div>
+                <!-- field label-->
+                <div class="field field-type-radio">
+                    <div class="field-option">
+                        <input class="radio " id="left" data-validation=" " name="align" type="radio" value="align-left">
+                        <label for="left" class="field-option-label">Align Left</label>
+                    </div>
+                    <div class="field-option">
+                        <input class="radio " checked="checked" id="center" data-validation=" " name="align" type="radio" value="align-center">
+                        <label for="center" class="field-option-label">Align center</label>
+                    </div>
+                    <div class="field-option">
+                        <input class="radio " id="right" data-validation=" " name="align" type="radio" value="align-right">
+                        <label for="right" class="field-option-label">Align right</label>
+                    </div>
+                </div>
+                <!-- field -->
+            </div>
+        </div>
+        <div class="ac l25">
+            <div class="field-wrapper ">
+                <div class="field-label">
+                    <label for="input_radio">
+                        <h4 class="field-title">
+                            Layout Position
+                        </h4>
+                    </label>
+                </div>
+                <!-- field label-->
+                <div class="field field-type-radio">
+                    <div class="field-option">
+                        <input class="radio " id="layout_left" data-validation=" " name="layout" type="radio" value="layout-left">
+                        <label for="layout_left" class="field-option-label">Layout left</label>
+                    </div>
+                    <div class="field-option">
+                        <input class="radio " id="layout_right" data-validation=" " name="layout" type="radio" value="layout-right">
+                        <label for="layout_right" class="field-option-label">Layout right</label>
+                    </div>
+                </div>
+                <!-- field -->
+            </div>
+        </div>
+        <div class="ac l25">
+            <div class="field-wrapper ">
+                <div class="field-label">
+                    <label>
+                        <h4 class="field-title">
+                            Select Theme
+                        </h4>
+                    </label>
+                </div>
+                <!-- field label-->
+                <div class="field field-type-select">
+                    <select class="browser-default " name="theme">
+                        <option value="">Select theme</option>
+                        <option value="theme-clean" selected="selected">Theme Clean</option>
+                        <option value="theme-bold">Theme Bold</option>
+                        <option value="theme-pastel">Theme pastel</option>
+                        <option value="theme-pointer">Theme pointer</option>
+                        <option value="theme-arrow">Theme arrow</option>
+                    </select>
+                </div>
+                <!-- field -->
+            </div>
+            <div class="field-option">
+                <input  id="margin"  name="margin" type="checkbox" value="margin">
+                <label for="margin" class="field-option-label">Enable margin</label>
+            </div>
+        </div>
+    </div>
+  <!-- <div class="ac l33">
+   
+    <div class="field">
+      
+        <input type="radio" name="direction" value="horizontal" id="horizontal"><label for="horizontal">Horizontal</label>
+        <input type="radio" name="direction" value="vertical" id="vertical"><label for="vertical">Vertical</label>
+        <br>
+        <input type="radio" name="align" value="align-left" id="left"><label for="left">Align Left</label>
+        <input type="radio" name="align" value="align-center" id="center" checked="checked"><label for="center">Align center</label>
+        <input type="radio" name="align" value="align-right" id="right"><label for="right">Align right</label>
+        <br>
+        <input type="radio" name="layout" value="layout-left" id="layout_left"><label for="layout_left">Layout left</label>
+        <input type="radio" name="layout" value="layout-right" id="layout_right"><label for="layout_right">Layout right</label>
+    </div>
+  </div>
+ 
+  <div class="ac l33">
+      <div class="field">
+        <select name="theme">
+            <option value="">Select Theme</option>
+            <option value="theme-clean">Theme Clean</option>
+            <option value="theme-bold" >Theme Bold</option>
+            <option value="theme-pastel">Theme pastel</option>
+            <option value="theme-pointer" selected="selected">Theme pointer</option>
+            <option value="theme-arrow">Theme arrow</option>
+            
+        </select>
+      </div>
+  </div>
+  <div class="ac l33">
+      <div class="field">
+
+          <input type="checkbox" name="margin" value="margin" id="margin"><label for="margin">Enable margin</label>
+      </div>
+  </div> -->
+</form>
+</div> 
+
+<div class="p-10 font-size-20 bg-grey bg-lighten-3">
+    <div>
+        Preview
+    </div>
+    <div>
+        Code
+    </div>
+    <a data-target="#aione_tabs_code_wrapper" class="aione-target aione-float-right grey darken-1">
+        <i class="fa fa-code"></i>
+    </a>
+    <a data-clipboard-target=".aione-tabs" class="clipboard aione-float-right grey darken-1">
+        <i class="fa fa-clipboard"></i> 
+    </a>
+</div>
+
+    <div class="p-10">
+    <div id="aione_tabs_code_wrapper" class="display-none p-10 font-size-20">
+        <textarea id="aione_tabs_code">wwwwwwwwwwwwwwwwwwwww
+        </textarea>
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="aione-tabs theme-bold horizontal align-left">
+  <div class="nav bg-grey bg-lighten-2">
+      <div data-target="#tab_preview" class="active"><i class="ion-monitor pr-10"></i>Preview</div>
+      <div data-target="#tab_code" class=""><i class="ion-code pr-10"></i>Code</div>
+      <div data-target="#tab_copy" class="aione-float-right"><i class="ion-clipboard pr-10"></i>Copy Code</div>
+  </div>
+  <div class="content">
+    <div id="tab_preview" class="active">
+        <div id="aione_tabs" class="aione-tabs theme-clean horizontal align-center">
+            <div class="nav">
+                <div data-target="#tab_aliquam" class="active">Aliquam</div>
+                <div data-target="#tab_inters" class="">Inters </div>
+                <div data-target="#tab_ontion" class="">Ontion </div>
+                <div data-target="#tab_nurture" class="">Nurture </div>
+                <div data-target="#tab_emigarnt" class="">Emigarnt </div>
+            </div>
+            <div class="content">
+                <div id="tab_aliquam" class="active">
+                    <h3 class="aione-align-center pv-10 ">Aliquam</h3>
+                    <p class="font-size-17 line-height-26 ph-50">
+                    Aliquam erat volutpat. Duis vitae commodo erat. Pellentesque varius eros non venenatis semper. Curabitur pulvinar, eros a ultrices tristique, tellus nunc eleifend neque, nec congue lectus ligula vitae ex. Curabitur molestie non massa at auctor. Ut porta eros consectetur, suscipit arcu vel, blandit ligula. Aliquam erat volutpat. Nam id eleifend libero. 
+                        <div class="aione-tabs theme-pastel vertical align-center">
+                            <div class="nav">
+                                <div data-target="#tab_orlando" class="active">Orlando</div>
+                                <div data-target="#tab_xender">Xender</div>
+                                <div data-target="#tab_odio">Odio</div>
+                            </div>
+                            <div class="content">
+                                <div id="tab_orlando" class="active">
+                                    <h3>Orlando</h3>
+                                    <div class="aione-tabs theme-pointer horizontal align-center">
+                                        <div class="nav">
+                                            <div data-target="#tab_dartling" class="active">Dartling</div>
+                                            <div data-target="#tab_auditors">Auditors</div>
+                                            <div data-target="#tab_rotundas">Rotundas</div>
+                                            <div data-target="#tab_ligands">Ligands</div>
+                                            <div data-target="#tab_indults">Indults</div>
+                                            <div data-target="#tab_cilantro">Cilantro</div>
+                                        </div>
+                                        <div class="content">
+                                            <div id="tab_dartling" class="active">
+                                                <h4>Dartling</h4>
+                                                    
+
+                                            </div>
+                                            <div id="tab_auditors">
+                                               Auditors
+                                            </div>
+                                            <div id="tab_rotundas">
+                                               Rotundas
+                                            </div>
+                                            <div id="tab_ligands">
+                                                Ligands
+                                            </div>
+                                            <div id="tab_indults">
+                                                Indults
+                                            </div>
+                                            <div id="tab_cilantro">
+                                                cilantro
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <!-- <div class="images">
-                                  <img src="https://morrisinn.nd.edu/wp-content/uploads/2013/07/10.26.15-Golden-Dome-677-1.gif">
-                                </div> -->
-                              </div>
-                        </div>
-                        <div id="tab_about" class="active">
-                            <div class="about">
-                                <div class="pargraph aione-align-center">
-                                  <h4 class="teal lighten-3 mb-10">About</h4>
-                                  
+                                <div id="tab_xender">
+                                    <h3>Xender</h3>
+                                </div>
+                                <div id="tab_odio">
+                                    <h3>Odio</h3>
                                 </div>
                             </div>
                         </div>
-                        <div id="tab_feature" class="active">
-                            
-                        </div>
-                        <div id="tab_partners" class="active">
-                            <div class="partners">
-                                <div class="pargraph aione-align-center">
-                                 <h4 class="teal lighten-3 mb-0">Partners</h4>
+                    </p>
+                    
+                </div>
+                <div id="tab_inters" >
+                      <h3 class="aione-align-center pv-10 ">Inters</h3>
+                      <p class="font-size-17 line-height-26 ph-50">In nunc at nunc egestas ullamcorper ut eu dui. Sed ipsum justo, pellentesque et commodo non, pharetra ut nibh. Donec mauris arcu, convallis in tortor vel, venenatis auctor mauris. Vestibulum ut est nec massa pellentesque imperdiet quis non sem. Donec laoreet libero sit amet orci ultrices elementum. Morbi nisl erat, mollis vitae justo et, imperdiet consectetur ante.  </p>
+                </div>
+                <div id="tab_ontion" >
+                      <h3 class="aione-align-center pv-10 ">Ontion</h3>
+                      <p class="font-size-17 line-height-26 ph-50">Onec vehicula malesuada risus porttitor luctus. Morbi lacinia blandit tellus, suscipit hendrerit dui vestibulum sit amet. Integer vitae felis auctor, tincidunt purus id, auctor elit. Phasellus ac dolor nisl. Nullam libero tortor, ornare eu volutpat quis, cursus quis ligula. Maecenas lacus nisl, ultrices vitae libero a, tincidunt fringilla nisi. Proin euismod condimentum lacus tincidunt placerat. Nunc ut placerat sem. Fusce rhoncus efficitur rutrum. Donec bibendum tristique sapien eu condimentum. Proin elit lacus, aliquam sit amet erat at, cursus pretium quam. Nullam sed felis lorem. Pellentesque bibendum iaculis mauris, sit amet facilisis sem ornare ac.  </p>
+                </div>
+                <div id="tab_nurture" >
+                      <h3 class="aione-align-center pv-10 ">Nurture</h3>
+                      <p class="font-size-17 line-height-26 ph-50">Odio vehicula odio, vitae tincidunt lectus turpis in quam. Praesent efficitur malesuada dolor, mattis dapibus mi consequat sit amet. Pellentesque a sem vitae nunc laoreet consectetur. Sed lorem sem, ultricies sit amet lacus at, eleifend volutpat mi. In rutrum, ligula eget tristique mollis, sem ligula porttitor elit, sit amet malesuada arcu quam nec eros. Suspendisse pretium ipsum sem, non congue lectus faucibus ut. Etiam quis efficitur massa, id commodo lectus. Quisque ultricies urna ex, fermentum dictum mi iaculis ut. In sem lectus, feugiat nec aliquet eget, euismod sed metus. Donec rutrum ipsum vel dignissim placerat. Pellentesque vitae arcu interdum, dignissim nisl quis, ornare sem. </p>
+                </div>
+                <div id="tab_emigarnt" >
+                      <h3 class="aione-align-center pv-10 ">Emigarnt</h3>
+                      <p class="font-size-17 line-height-26 ph-50">Xaecenas enim nunc, gravida sit amet dapibus at, vehicula et elit. Aenean mollis libero accumsan pharetra bibendum. Sed a consectetur sem. Nunc ac augue lacinia, aliquet mauris at, lobortis mauris. Vivamus vel metus pharetra, pretium elit quis, efficitur neque. Phasellus faucibus bibendum mollis. Sed condimentum viverra lacinia. Etiam volutpat eros ut pretium gravida. Nunc dignissim, orci sit amet tincidunt rutrum, urna erat tempus arcu, ac posuere massa ex nec urna. Etiam et congue elit, quis auctor mi. Etiam facilisis eleifend luctus. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="tab_code">
+
+    </div>
+    <div id="tab_copy" class="p-5p">
+        <h2 class="aione-align-center green"><i class="ion-ios-checkmark-outline"></i></h2>
+        <h3 class="aione-align-center green">Copied!</h3>
+        <h4 class="aione-align-center font-size-17 font-weight-300">The code is copied to your clipboard.<br> Now you can paste the code to where you like.</h4>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                                  
-                                </div>
-                            </div>
-                        </div>
-                        <div id="tab_testimonials" class="active">
-                            <div class="testimonials">
-                                <div class=" aione-align-center">
-                                 <h4 class=" lighten-3 mb-0">Testimonials</h4>
-                                </div>
-                            </div> 
-                        </div>
-                         <div id="tab_service" class="active">
-                            <div class="service">
-                                <div class="pargraph aione-align-center">
-                                  <h4 class="teal lighten-3 mb-0">Service</h4>
-                                 </div>
-                            </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div id="project_tabs" class="project-tabs">
-                    <div class="aione-tabs">
-                      <h3>Horizontal</h3>
-                      <div id="aione_tabs_nav" class="aione-tabs-nav horizontal">
-                      <ul>
-                          <li data-target="tab_objective" class="active"> 
-                              <div class="aione-tab-icon"><i class="ion-ios-analytics-outline"></i></div>
-                              Home
-                          </li>
-                          <li data-target="tab_need">
-                              <div class="aione-tab-icon"><i class="ion-ios-keypad-outline"></i></div>
-                              About
-                          </li>
-                          <li data-target="tab_approach">
-                              <div class="aione-tab-icon"><i class="ion-ios-infinite-outline"></i></div>
-                              Service
-                          </li>
-                          <li data-target="tab_events">
-                              <div class="aione-tab-icon"><i class="ion-ios-calendar-outline"></i></div>
-                              Feature
-                          </li>
-                          <li data-target="tab_partners">
-                              <div class="aione-tab-icon"><i class="ion-ios-world-outline"></i></div>
-                              Partners
-                          </li>
-                          <li data-target="tab_testimonials">
-                              <div class="aione-tab-icon"><i class="ion-ios-person-outline"></i></div>
-                              Testimonials
-                          </li>
-                      </ul>
-                    </div>
-                    <div id="aione_tabs_content" class="aione-tabs-content">
-                        <div id="tab_objective" class="active">
-                            <div class="objective">
-                                <div class="aione-title">
-                                 </div>
-                                <h3 class="font-size-24 font-weight-100 aione-align-center mb-30"></h3>
-                             </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div id="project_tabs" class="project-tabs">
-                    <div class="aione-tabs">
-                      <h3>Vertical</h3>
-                      <div id="aione_tabs_nav" class="aione-tabs-nav vertical theme-pastel">
-                      <ul>
-                          <li data-target="tab_objective" class="active"> 
-                              <div class="aione-tab-icon"><i class="ion-ios-analytics-outline"></i></div>
-                              Home
-                          </li>
-                          <li data-target="tab_need">
-                              <div class="aione-tab-icon"><i class="ion-ios-keypad-outline"></i></div>
-                              About
-                          </li>
-                          <li data-target="tab_approach">
-                              <div class="aione-tab-icon"><i class="ion-ios-infinite-outline"></i></div>
-                              Service
-                          </li>
-                          <li data-target="tab_events">
-                              <div class="aione-tab-icon"><i class="ion-ios-calendar-outline"></i></div>
-                              Feature
-                          </li>
-                          <li data-target="tab_partners">
-                              <div class="aione-tab-icon"><i class="ion-ios-world-outline"></i></div>
-                              Partners
-                          </li>
-                          <li data-target="tab_testimonials">
-                              <div class="aione-tab-icon"><i class="ion-ios-person-outline"></i></div>
-                              Testimonials
-                          </li>
-                      </ul>
-                    </div>
-                    <div id="aione_tabs_content" class="aione-tabs-content">
-                        <div id="tab_objective" class="active">
-                            <div class="objective">
-                                <div class="aione-title">
-                                  title
-                                 </div>
-                                <h3 class="font-size-24 font-weight-100 aione-align-center mb-30"></h3>
-                             </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div id="project_tabs" class="project-tabs">
-                    <div class="aione-tabs">
-                      <h3>Vertical</h3>
-                      <div id="aione_tabs_nav" class="aione-tabs-nav vertical">
-                      <ul>
-                          <li data-target="tab_objective" class="active"> 
-                              <div class="aione-tab-icon"><i class="ion-ios-analytics-outline"></i></div>
-                              Home
-                          </li>
-                          <li data-target="tab_need">
-                              <div class="aione-tab-icon"><i class="ion-ios-keypad-outline"></i></div>
-                              About
-                          </li>
-                          <li data-target="tab_approach">
-                              <div class="aione-tab-icon"><i class="ion-ios-infinite-outline"></i></div>
-                              Service
-                          </li>
-                          <li data-target="tab_events">
-                              <div class="aione-tab-icon"><i class="ion-ios-calendar-outline"></i></div>
-                              Feature
-                          </li>
-                          <li data-target="tab_partners">
-                              <div class="aione-tab-icon"><i class="ion-ios-world-outline"></i></div>
-                              Partners
-                          </li>
-                          <li data-target="tab_testimonials">
-                              <div class="aione-tab-icon"><i class="ion-ios-person-outline"></i></div>
-                              Testimonials
-                          </li>
-                      </ul>
-                    </div>
-                    <div id="aione_tabs_content" class="aione-tabs-content">
-                        <div id="tab_objective" class="active">
-                            <div class="objective">
-                                <div class="aione-title">
-                                 </div>
-                                <h3 class="font-size-24 font-weight-100 aione-align-center mb-30"></h3>
-                             </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                              </section>
+
                  </div>
               </div>
             </div><!-- .wrapper -->
