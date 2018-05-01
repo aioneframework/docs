@@ -1,6 +1,5 @@
 $(document).ready(function() {
 	
-    $(".options").click();
     $(".options").click(function(e) {
         var options = "";
         var options_data = $(this).find("form").serializeArray();
@@ -10,6 +9,7 @@ $(document).ready(function() {
         $( "#tab_preview > *").attr('class',options);
         $( "#tab_code > textarea").val($( "#tab_preview > *")[0].outerHTML);
     });
+    $(".options").click();
 	$('#aione_header').load('template/aione_header.html', function() {
 		var options = {
 			valueNames: ['aione-search-item'],

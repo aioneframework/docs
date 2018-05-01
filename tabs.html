@@ -7,10 +7,6 @@
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600,800">
   <link rel="stylesheet" type="text/css" href="assets/css/docs.css">
   <link rel="stylesheet" type="text/css" href="assets/ionicons/css/ionicons.css">
-  <script type="text/javascript" src="http://manage.aioneframework.com/aioneframework/assets/js/vendor.min.js"></script>
-  <script type="text/javascript" src="http://manage.aioneframework.com/aioneframework/assets/js/aione.min.js"></script>
-  <script type="text/javascript" src="assets/js/script.js"></script>
-
 </head>
 <body>
   <div id="aione_wrapper" class="aione-wrapper layout-header-left aione-layout-wide aione-theme-arcane">
@@ -25,255 +21,204 @@
           <div id="aione_pagetitle" class="aione-pagetitle">
             <div class="wrapper">
               <div class="aione-title">
-                <h3 class="aione-page-title">Getting Started</h3>
+                <h3 class="aione-page-title">Tabs</h3>
               </div><!-- .aione-title -->
             </div> <!-- .wrapper -->
           </div><!-- .aione-pagetitle -->
           <div id="aione_content" class="aione-content">
             <div class="wrapper">
               <div id="aione_page_content" class="aione-page-content">
-                <div class="wrapper">
-                  <section class="">
+                <div class="wrapper"> 
+    
+                  <section class="intro">
+                    <h4 class="font-weight-300">Aione framework provides a clean, responsive, customizable tabs design including horizontal and vertical tabs</h4>
+                  </section>
+                  <section class="options">
+                    <div class="ar aione-border mb-20">
+                      <form>
+                          <input type="hidden" name="component" value="aione-tabs">
+                          <div class="p-10 font-size-20 bg-grey bg-lighten-3">
+                              Select Options to generate tabs
+                          </div>
+                          <div class="ar">
+                              <div class="ac l25">
+                                  <div class="field-wrapper ">
+                                      <div class="field-label">
+                                          <label for="input_radio">
+                                              <h4 class="field-title">
+                                                  Select Direction
+                                              </h4>
+                                          </label>
+                                      </div>
+                                      <!-- field label-->
+                                      <div class="field field-type-radio">
+                                          <div class="field-option">
+                                              <input checked="checked" class="radio " id="horizontal" data-validation=" " name="direction" type="radio" value="horizontal">
+                                              <label for="horizontal" class="field-option-label">Horizontal</label>
+                                          </div>
+                                          <div class="field-option">
+                                              <input class="radio " id="vertical" data-validation=" " name="direction" type="radio" value="vertical">
+                                              <label for="vertical" class="field-option-label">Vertical</label>
+                                          </div>
+                                      </div>
+                                      <!-- field -->
+                                  </div>
 
+                              </div>
+                              <div class="ac l25">
+                                  <div class="field-wrapper ">
+                                      <div class="field-label">
+                                          <label for="input_radio">
+                                              <h4 class="field-title">
+                                                  Select Text Alignment
+                                              </h4>
+                                          </label>
+                                      </div>
+                                      <!-- field label-->
+                                      <div class="field field-type-radio">
+                                          <div class="field-option">
+                                              <input class="radio " id="left" data-validation=" " name="align" type="radio" value="align-left">
+                                              <label for="left" class="field-option-label">Align Left</label>
+                                          </div>
+                                          <div class="field-option">
+                                              <input class="radio " checked="checked" id="center" data-validation=" " name="align" type="radio" value="align-center">
+                                              <label for="center" class="field-option-label">Align center</label>
+                                          </div>
+                                          <div class="field-option">
+                                              <input class="radio " id="right" data-validation=" " name="align" type="radio" value="align-right">
+                                              <label for="right" class="field-option-label">Align right</label>
+                                          </div>
+                                      </div>
+                                      <!-- field -->
+                                  </div>
+                              </div>
+                              <div class="ac l25">
+                                  <div class="field-wrapper ">
+                                      <div class="field-label">
+                                          <label for="input_radio">
+                                              <h4 class="field-title">
+                                                  Layout Position
+                                              </h4>
+                                          </label>
+                                      </div>
+                                      <!-- field label-->
+                                      <div class="field field-type-radio">
+                                          <div class="field-option">
+                                              <input class="radio " id="layout_left" data-validation=" " name="layout" type="radio" value="layout-left">
+                                              <label for="layout_left" class="field-option-label">Layout left</label>
+                                          </div>
+                                          <div class="field-option">
+                                              <input class="radio " id="layout_right" data-validation=" " name="layout" type="radio" value="layout-right">
+                                              <label for="layout_right" class="field-option-label">Layout right</label>
+                                          </div>
+                                      </div>
+                                      <!-- field -->
+                                  </div>
+                              </div>
+                              <div class="ac l25">
+                                  <div class="field-wrapper ">
+                                      <div class="field-label">
+                                          <label>
+                                              <h4 class="field-title">
+                                                  Select Theme
+                                              </h4>
+                                          </label>
+                                      </div>
+                                      <!-- field label-->
+                                      <div class="field field-type-select">
+                                          <select class="browser-default " name="theme">
+                                              <option value="">Select theme</option>
+                                              <option value="theme-clean" selected="selected">Theme Clean</option>
+                                              <option value="theme-bold">Theme Bold</option>
+                                              <option value="theme-pastel">Theme pastel</option>
+                                              <option value="theme-pointer">Theme pointer</option>
+                                              <option value="theme-arrow">Theme arrow</option>
+                                          </select>
+                                      </div>
+                                      <!-- field -->
+                                  </div>
+                                  <div class="field-option">
+                                      <input  id="margin"  name="margin" type="checkbox" value="margin">
+                                      <label for="margin" class="field-option-label">Enable margin</label>
+                                  </div>
+                              </div>
+                          </div>
+                      </form>
+                    </div> 
+                  </section>
+                  <section class="content">
 
+                    <div class="aione-tabs theme-bold horizontal align-left">
+                      <div class="nav bg-grey bg-lighten-2">
+                          <div data-target="#tab_preview" class="active"><i class="ion-monitor pr-10"></i>Preview</div>
+                          <div data-target="#tab_code" class=""><i class="ion-code pr-10"></i>Code</div>
+                      </div>
+                      <div class="content">
+                          <div id="tab_preview" class="active">
 
+                            <div class="aione-tabs horizontal">
+                              <div class="nav">
+                                  <div data-target="#tab_sollicitudin" class="active">Sollicitudin </div>
+                                  <div data-target="#tab_gravida" class="">Gravida </div>
+                                  <div data-target="#tab_sagittarius" class="">Sagittarius </div>
+                                  <div data-target="#tab_sulcation" class="">Sulcation </div>
+                                  <div data-target="#tab_acinous" class="">Acinous </div>
+                                  <div data-target="#tab_noctuids" class="">Noctuids </div>
+                                  <div data-target="#tab_dioxans" class="">Dioxans </div>
+                                  <div data-target="#tab_hectic" class="">Hectic </div>
+                                  <div data-target="#tab_uncials" class="">Uncials </div>
+                              </div>
+                              <div class="content">
+                                  <div id="tab_sollicitudin" class="active">
+                                      <h3 class="aione-align-center pv-10 ">Sollicitudin</h3>
+                                      <p class="font-size-17 line-height-26 ph-50">Sollicitudin gravida sagittarius sulcation acinous noctuids dioxans hectic uncials. Orlando xender odio sapien orci lacus ultricies tempus Itsum omega Narming dartling auditors rotundas ligands indults cilantro. Couldst ostanga meridina dartling auditors rotundas ligands indults cilantro. </p>
+                                  </div>
+                                  <div id="tab_gravida" >
+                                      <h3 class="aione-align-center pv-10 ">Gravida</h3>
+                                      <p class="font-size-17 line-height-26 ph-50">Gordi omegs xerus orlando stango oftin lopus untempr tinlen implan ontrox nitrox prox reminant ipsum vertue acimous tectum exendil lacus inkin meridum insink tatocs eminet docardo.Vivamus in ligula lobortis mauris tempor rhoncus. Nam commodo felis augue, ut interdum tellus sodales vitae. Mauris convallis tempus euismod. Suspendisse tincidunt tristique ex a dictum. </p>
+                                  </div>
+                                  <div id="tab_sagittarius" >
+                                      <h3 class="aione-align-center pv-10 ">Sagittarius</h3>
+                                      <p class="font-size-17 line-height-26 ph-50">Sed sed nisl molestie, facilisis purus at, pellentesque est. Praesent felis urna, pulvinar sit amet nunc vel, suscipit dapibus nunc. Aliquam sed est in nibh molestie pellentesque. Quisque auctor sodales diam eu fermentum. Maecenas mattis placerat rhoncus. Nunc laoreet, erat ut posuere malesuada, felis diam vulputate turpis, in pellentesque metus lorem et mauris. Quisque efficitur mollis dui sit amet pretium. </p>
+                                  </div>
+                                  <div id="tab_sulcation" >
+                                      <h3 class="aione-align-center pv-10 ">Sulcation</h3>
+                                      <p class="font-size-17 line-height-26 ph-50">Odio vehicula odio, vitae tincidunt lectus turpis in quam. Praesent efficitur malesuada dolor, mattis dapibus mi consequat sit amet. Pellentesque a sem vitae nunc laoreet consectetur. Sed lorem sem, ultricies sit amet lacus at, eleifend volutpat mi. In rutrum, ligula eget tristique mollis, sem ligula porttitor elit, sit amet malesuada arcu quam nec eros. Suspendisse pretium ipsum sem, non congue lectus faucibus ut. Etiam quis efficitur massa, id commodo lectus. Quisque ultricies urna ex, fermentum dictum mi iaculis ut. In sem lectus, feugiat nec aliquet eget, euismod sed metus. Donec rutrum ipsum vel dignissim placerat. Pellentesque vitae arcu interdum, dignissim nisl quis, ornare sem. </p>
+                                  </div>
+                                  <div id="tab_acinous" >
+                                      <h3 class="aione-align-center pv-10 ">Acinous</h3>
+                                      <p class="font-size-17 line-height-26 ph-50">Xaecenas enim nunc, gravida sit amet dapibus at, vehicula et elit. Aenean mollis libero accumsan pharetra bibendum. Sed a consectetur sem. Nunc ac augue lacinia, aliquet mauris at, lobortis mauris. Vivamus vel metus pharetra, pretium elit quis, efficitur neque. Phasellus faucibus bibendum mollis. Sed condimentum viverra lacinia. Etiam volutpat eros ut pretium gravida. Nunc dignissim, orci sit amet tincidunt rutrum, urna erat tempus arcu, ac posuere massa ex nec urna. Etiam et congue elit, quis auctor mi. Etiam facilisis eleifend luctus. </p>
+                                  </div>
+                                  <div id="tab_noctuids" >
+                                      <h3 class="aione-align-center pv-10 ">Noctuids</h3>
+                                      <p class="font-size-17 line-height-26 ph-50">Oonec malesuada, turpis a vestibulum pulvinar, nisl orci imperdiet magna, eget tempus risus tortor et tellus. Sed quis sem egestas, elementum diam ac, convallis eros. Cras at interdum est. Donec quis magna quis metus sodales egestas. Duis id blandit nulla. Mauris quis augue non neque suscipit interdum. Nulla ultrices ex feugiat nulla mollis, in eleifend nibh bibendum. In hac habitasse platea dictumst. Phasellus mauris tortor, feugiat eget tincidunt id, eleifend eu odio. Nullam suscipit vel elit quis cursus. Nullam hendrerit dui sit amet aliquet pellentesque. </p>
+                                  </div>
+                                  <div id="tab_dioxans" >
+                                      <h3 class="aione-align-center pv-10 ">Dioxans</h3>
+                                      <p class="font-size-17 line-height-26 ph-50">Donec ultrices elit libero, ut tincidunt justo venenatis ac. Vivamus sagittis ultricies justo, vel iaculis risus lobortis scelerisque. Phasellus justo leo, aliquet ac posuere sit amet, semper nec orci. Morbi eget suscipit velit. Sed tempus velit a felis mollis consequat. Sed eget nunc sem. Ut eget ullamcorper lorem. Proin libero mauris, fringilla vitae augue a, dictum eleifend massa. Donec malesuada consectetur felis, nec mattis ante porta dictum. Phasellus at varius ipsum, a imperdiet ipsum. Aenean facilisis euismod scelerisque. Donec nec finibus neque, et interdum eros. Etiam id eros vel nunc vehicula pretium ut sit amet tortor. Nullam sed nibh sapien. </p>
+                                  </div>
+                                  <div id="tab_hectic" >
+                                      <h3 class="aione-align-center pv-10 ">Hectic</h3>
+                                      <p class="font-size-17 line-height-26 ph-50">Aliquam erat volutpat. Duis vitae commodo erat. Pellentesque varius eros non venenatis semper. Curabitur pulvinar, eros a ultrices tristique, tellus nunc eleifend neque, nec congue lectus ligula vitae ex. Curabitur molestie non massa at auctor. Ut porta eros consectetur, suscipit arcu vel, blandit ligula. Aliquam erat volutpat. Nam id eleifend libero. </p>
+                                  </div>
+                                  <div id="tab_uncials" >
+                                      <h3 class="aione-align-center pv-10 ">Uncials</h3>
+                                      <p class="font-size-17 line-height-26 ph-50">Rutrum quam non quam dapibus condimentum. Donec ac pharetra massa. Donec tristique, eros vitae egestas tempus, lectus odio vehicula odio, vitae tincidunt lectus turpis in quam. Praesent efficitur malesuada dolor, mattis dapibus mi consequat sit amet. Pellentesque a sem vitae nunc laoreet consectetur. Sed lorem sem, ultricies sit amet lacus at, eleifend volutpat mi. In rutrum, ligula eget tristique mollis, sem ligula porttitor elit, sit amet malesuada arcu quam nec eros. Suspendisse pretium ipsum sem, non congue lectus faucibus ut. Etiam quis efficitur massa, id commodo lectus. Quisque ultricies urna ex, fermentum dictum mi iaculis ut. In sem lectus, feugiat nec aliquet eget, euismod sed metus. </p>
+                                  </div>
+                                </div>
+                            </div>
 
-
-
-<div class="options ar aione-border mb-20">
-<form>
-    <input type="hidden" name="component" value="aione-tabs">
-    <div class="p-10 font-size-20 bg-grey bg-lighten-3">
-        Select Options to generate tabs
-    </div>
-    <div class="ar">
-        <div class="ac l25">
-            <div class="field-wrapper ">
-                <div class="field-label">
-                    <label for="input_radio">
-                        <h4 class="field-title">
-                            Select Direction
-                        </h4>
-                    </label>
-                </div>
-                <!-- field label-->
-                <div class="field field-type-radio">
-                    <div class="field-option">
-                        <input checked="checked" class="radio " id="horizontal" data-validation=" " name="direction" type="radio" value="horizontal">
-                        <label for="horizontal" class="field-option-label">Horizontal</label>
-                    </div>
-                    <div class="field-option">
-                        <input class="radio " id="vertical" data-validation=" " name="direction" type="radio" value="vertical">
-                        <label for="vertical" class="field-option-label">Vertical</label>
-                    </div>
-                </div>
-                <!-- field -->
-            </div>
-
-        </div>
-        <div class="ac l25">
-            <div class="field-wrapper ">
-                <div class="field-label">
-                    <label for="input_radio">
-                        <h4 class="field-title">
-                            Select Text Alignment
-                        </h4>
-                    </label>
-                </div>
-                <!-- field label-->
-                <div class="field field-type-radio">
-                    <div class="field-option">
-                        <input class="radio " id="left" data-validation=" " name="align" type="radio" value="align-left">
-                        <label for="left" class="field-option-label">Align Left</label>
-                    </div>
-                    <div class="field-option">
-                        <input class="radio " checked="checked" id="center" data-validation=" " name="align" type="radio" value="align-center">
-                        <label for="center" class="field-option-label">Align center</label>
-                    </div>
-                    <div class="field-option">
-                        <input class="radio " id="right" data-validation=" " name="align" type="radio" value="align-right">
-                        <label for="right" class="field-option-label">Align right</label>
-                    </div>
-                </div>
-                <!-- field -->
-            </div>
-        </div>
-        <div class="ac l25">
-            <div class="field-wrapper ">
-                <div class="field-label">
-                    <label for="input_radio">
-                        <h4 class="field-title">
-                            Layout Position
-                        </h4>
-                    </label>
-                </div>
-                <!-- field label-->
-                <div class="field field-type-radio">
-                    <div class="field-option">
-                        <input class="radio " id="layout_left" data-validation=" " name="layout" type="radio" value="layout-left">
-                        <label for="layout_left" class="field-option-label">Layout left</label>
-                    </div>
-                    <div class="field-option">
-                        <input class="radio " id="layout_right" data-validation=" " name="layout" type="radio" value="layout-right">
-                        <label for="layout_right" class="field-option-label">Layout right</label>
-                    </div>
-                </div>
-                <!-- field -->
-            </div>
-        </div>
-        <div class="ac l25">
-            <div class="field-wrapper ">
-                <div class="field-label">
-                    <label>
-                        <h4 class="field-title">
-                            Select Theme
-                        </h4>
-                    </label>
-                </div>
-                <!-- field label-->
-                <div class="field field-type-select">
-                    <select class="browser-default " name="theme">
-                        <option value="">Select theme</option>
-                        <option value="theme-clean" selected="selected">Theme Clean</option>
-                        <option value="theme-bold">Theme Bold</option>
-                        <option value="theme-pastel">Theme pastel</option>
-                        <option value="theme-pointer">Theme pointer</option>
-                        <option value="theme-arrow">Theme arrow</option>
-                    </select>
-                </div>
-                <!-- field -->
-            </div>
-            <div class="field-option">
-                <input  id="margin"  name="margin" type="checkbox" value="margin">
-                <label for="margin" class="field-option-label">Enable margin</label>
-            </div>
-        </div>
-    </div>
-  <!-- <div class="ac l33">
-   
-    <div class="field">
-      
-        <input type="radio" name="direction" value="horizontal" id="horizontal"><label for="horizontal">Horizontal</label>
-        <input type="radio" name="direction" value="vertical" id="vertical"><label for="vertical">Vertical</label>
-        <br>
-        <input type="radio" name="align" value="align-left" id="left"><label for="left">Align Left</label>
-        <input type="radio" name="align" value="align-center" id="center" checked="checked"><label for="center">Align center</label>
-        <input type="radio" name="align" value="align-right" id="right"><label for="right">Align right</label>
-        <br>
-        <input type="radio" name="layout" value="layout-left" id="layout_left"><label for="layout_left">Layout left</label>
-        <input type="radio" name="layout" value="layout-right" id="layout_right"><label for="layout_right">Layout right</label>
-    </div>
-  </div>
- 
-  <div class="ac l33">
-      <div class="field">
-        <select name="theme">
-            <option value="">Select Theme</option>
-            <option value="theme-clean">Theme Clean</option>
-            <option value="theme-bold" >Theme Bold</option>
-            <option value="theme-pastel">Theme pastel</option>
-            <option value="theme-pointer" selected="selected">Theme pointer</option>
-            <option value="theme-arrow">Theme arrow</option>
-            
-        </select>
-      </div>
-  </div>
-  <div class="ac l33">
-      <div class="field">
-
-          <input type="checkbox" name="margin" value="margin" id="margin"><label for="margin">Enable margin</label>
-      </div>
-  </div> -->
-</form>
-</div> 
-
-
-
-
-
-<div class="aione-tabs theme-bold horizontal align-left">
-  <div class="nav bg-grey bg-lighten-2">
-      <div data-target="#tab_preview" class="active"><i class="ion-monitor pr-10"></i>Preview</div>
-      <div data-target="#tab_code" class=""><i class="ion-code pr-10"></i>Code</div>
-  </div>
-  <div class="content">
-      <div id="tab_preview" class="active">
-<div id="aione_tabs" class="aione-tabs theme-clean horizontal align-center">
-  <div class="nav">
-      <div data-target="#tab_sollicitudin" class="active">Sollicitudin </div>
-      <div data-target="#tab_gravida" class="">Gravida </div>
-      <div data-target="#tab_sagittarius" class="">Sagittarius </div>
-      <div data-target="#tab_sulcation" class="">Sulcation </div>
-      <div data-target="#tab_acinous" class="">Acinous </div>
-      <div data-target="#tab_noctuids" class="">Noctuids </div>
-      <div data-target="#tab_dioxans" class="">Dioxans </div>
-      <div data-target="#tab_hectic" class="">Hectic </div>
-      <div data-target="#tab_uncials" class="">Uncials </div>
-  </div>
-  <div class="content">
-      <div id="tab_sollicitudin" class="active">
-          <h3 class="aione-align-center pv-10 ">Sollicitudin</h3>
-          <p class="font-size-17 line-height-26 ph-50">Sollicitudin gravida sagittarius sulcation acinous noctuids dioxans hectic uncials. Orlando xender odio sapien orci lacus ultricies tempus Itsum omega Narming dartling auditors rotundas ligands indults cilantro. Couldst ostanga meridina dartling auditors rotundas ligands indults cilantro. </p>
-      </div>
-      <div id="tab_gravida" >
-          <h3 class="aione-align-center pv-10 ">Gravida</h3>
-          <p class="font-size-17 line-height-26 ph-50">Gordi omegs xerus orlando stango oftin lopus untempr tinlen implan ontrox nitrox prox reminant ipsum vertue acimous tectum exendil lacus inkin meridum insink tatocs eminet docardo.Vivamus in ligula lobortis mauris tempor rhoncus. Nam commodo felis augue, ut interdum tellus sodales vitae. Mauris convallis tempus euismod. Suspendisse tincidunt tristique ex a dictum. </p>
-      </div>
-      <div id="tab_sagittarius" >
-          <h3 class="aione-align-center pv-10 ">Sagittarius</h3>
-          <p class="font-size-17 line-height-26 ph-50">Sed sed nisl molestie, facilisis purus at, pellentesque est. Praesent felis urna, pulvinar sit amet nunc vel, suscipit dapibus nunc. Aliquam sed est in nibh molestie pellentesque. Quisque auctor sodales diam eu fermentum. Maecenas mattis placerat rhoncus. Nunc laoreet, erat ut posuere malesuada, felis diam vulputate turpis, in pellentesque metus lorem et mauris. Quisque efficitur mollis dui sit amet pretium. </p>
-      </div>
-      <div id="tab_sulcation" >
-          <h3 class="aione-align-center pv-10 ">Sulcation</h3>
-          <p class="font-size-17 line-height-26 ph-50">Odio vehicula odio, vitae tincidunt lectus turpis in quam. Praesent efficitur malesuada dolor, mattis dapibus mi consequat sit amet. Pellentesque a sem vitae nunc laoreet consectetur. Sed lorem sem, ultricies sit amet lacus at, eleifend volutpat mi. In rutrum, ligula eget tristique mollis, sem ligula porttitor elit, sit amet malesuada arcu quam nec eros. Suspendisse pretium ipsum sem, non congue lectus faucibus ut. Etiam quis efficitur massa, id commodo lectus. Quisque ultricies urna ex, fermentum dictum mi iaculis ut. In sem lectus, feugiat nec aliquet eget, euismod sed metus. Donec rutrum ipsum vel dignissim placerat. Pellentesque vitae arcu interdum, dignissim nisl quis, ornare sem. </p>
-      </div>
-      <div id="tab_acinous" >
-          <h3 class="aione-align-center pv-10 ">Acinous</h3>
-          <p class="font-size-17 line-height-26 ph-50">Xaecenas enim nunc, gravida sit amet dapibus at, vehicula et elit. Aenean mollis libero accumsan pharetra bibendum. Sed a consectetur sem. Nunc ac augue lacinia, aliquet mauris at, lobortis mauris. Vivamus vel metus pharetra, pretium elit quis, efficitur neque. Phasellus faucibus bibendum mollis. Sed condimentum viverra lacinia. Etiam volutpat eros ut pretium gravida. Nunc dignissim, orci sit amet tincidunt rutrum, urna erat tempus arcu, ac posuere massa ex nec urna. Etiam et congue elit, quis auctor mi. Etiam facilisis eleifend luctus. </p>
-      </div>
-      <div id="tab_noctuids" >
-          <h3 class="aione-align-center pv-10 ">Noctuids</h3>
-          <p class="font-size-17 line-height-26 ph-50">Oonec malesuada, turpis a vestibulum pulvinar, nisl orci imperdiet magna, eget tempus risus tortor et tellus. Sed quis sem egestas, elementum diam ac, convallis eros. Cras at interdum est. Donec quis magna quis metus sodales egestas. Duis id blandit nulla. Mauris quis augue non neque suscipit interdum. Nulla ultrices ex feugiat nulla mollis, in eleifend nibh bibendum. In hac habitasse platea dictumst. Phasellus mauris tortor, feugiat eget tincidunt id, eleifend eu odio. Nullam suscipit vel elit quis cursus. Nullam hendrerit dui sit amet aliquet pellentesque. </p>
-      </div>
-      <div id="tab_dioxans" >
-          <h3 class="aione-align-center pv-10 ">Dioxans</h3>
-          <p class="font-size-17 line-height-26 ph-50">Donec ultrices elit libero, ut tincidunt justo venenatis ac. Vivamus sagittis ultricies justo, vel iaculis risus lobortis scelerisque. Phasellus justo leo, aliquet ac posuere sit amet, semper nec orci. Morbi eget suscipit velit. Sed tempus velit a felis mollis consequat. Sed eget nunc sem. Ut eget ullamcorper lorem. Proin libero mauris, fringilla vitae augue a, dictum eleifend massa. Donec malesuada consectetur felis, nec mattis ante porta dictum. Phasellus at varius ipsum, a imperdiet ipsum. Aenean facilisis euismod scelerisque. Donec nec finibus neque, et interdum eros. Etiam id eros vel nunc vehicula pretium ut sit amet tortor. Nullam sed nibh sapien. </p>
-      </div>
-      <div id="tab_hectic" >
-          <h3 class="aione-align-center pv-10 ">Hectic</h3>
-          <p class="font-size-17 line-height-26 ph-50">Aliquam erat volutpat. Duis vitae commodo erat. Pellentesque varius eros non venenatis semper. Curabitur pulvinar, eros a ultrices tristique, tellus nunc eleifend neque, nec congue lectus ligula vitae ex. Curabitur molestie non massa at auctor. Ut porta eros consectetur, suscipit arcu vel, blandit ligula. Aliquam erat volutpat. Nam id eleifend libero. </p>
-      </div>
-      <div id="tab_uncials" >
-          <h3 class="aione-align-center pv-10 ">Uncials</h3>
-          <p class="font-size-17 line-height-26 ph-50">Rutrum quam non quam dapibus condimentum. Donec ac pharetra massa. Donec tristique, eros vitae egestas tempus, lectus odio vehicula odio, vitae tincidunt lectus turpis in quam. Praesent efficitur malesuada dolor, mattis dapibus mi consequat sit amet. Pellentesque a sem vitae nunc laoreet consectetur. Sed lorem sem, ultricies sit amet lacus at, eleifend volutpat mi. In rutrum, ligula eget tristique mollis, sem ligula porttitor elit, sit amet malesuada arcu quam nec eros. Suspendisse pretium ipsum sem, non congue lectus faucibus ut. Etiam quis efficitur massa, id commodo lectus. Quisque ultricies urna ex, fermentum dictum mi iaculis ut. In sem lectus, feugiat nec aliquet eget, euismod sed metus. </p>
-      </div>
-    </div>
-</div>
-
-      </div>
-      <div id="tab_code" class="bg-grey bg-darken-4">
-        <div data-target="#tab_copy" data-clipboard-target="#tab_code_code" class="clipboard bg-white blue"><i class="ion-clipboard pr-10"></i>Copy Code</div>
-        <textarea id="tab_code_code" class="aione-code"></textarea>
-      </div>
-  </div>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                 
+                          </div>
+                          <div id="tab_code" class="bg-grey bg-darken-4">
+                            <div data-target="#tab_copy" data-clipboard-target="#tab_code_code" class="clipboard bg-white blue"><i class="ion-clipboard pr-10"></i>Copy Code</div>
+                            <textarea id="tab_code_code" class="aione-code"></textarea>
+                          </div>
+                      </div>
+                    </div>    
+                  </section>
+                  <section class="examples">
+                  </section>
+                  <section class="comments">
                   </section>
                  </div>
               </div>
@@ -286,5 +231,8 @@
 
     </div><!-- .wrapper -->
   </div><!-- .aione-wrapper -->
+<script type="text/javascript" src="https://cdn.aioneframework.com/assets/js/vendor.min.js"></script>
+<script type="text/javascript" src="https://cdn.aioneframework.com/assets/js/aione.min.js"></script>
+<script type="text/javascript" src="assets/js/script.js"></script>
 </body>
 </html>
