@@ -53,7 +53,250 @@
                             <div class="wrapper">
                                 <div id="aione_page_content" class="aione-page-content">
                                     <div class="wrapper">
-                                        
+                                        <section class="intro">
+                                            <h4 class="font-weight-300">Aione framework provides a clean, responsive, customizable tabs design including horizontal and vertical tabs</h4>
+                                        </section>
+                                        <section class="options">
+                                            <div class=" ar aione-border mb-20">
+                                            <form>
+                                                <input type="hidden" name="component" value="gallery">
+                                                <div class="p-10 font-size-20 bg-grey bg-lighten-3">
+                                                    Select Options to generate Slider
+                                                </div>
+                                                <div class="ar">
+                                                    <div class="ac l25">
+                                                        <div class="field-wrapper ">
+                                                            <div class="field-label">
+                                                                <label>
+                                                                    <h4 class="field-title">
+                                                                        Number of columns
+                                                                    </h4>
+                                                                </label>
+                                                            </div>
+                                                            <!-- field label-->
+                                                            <div class="field field-type-select">
+                                                                <select class="browser-default " name="theme">
+                                                                    <option value="">Select Number</option>
+                                                                    <option value="gallery-columns-1">1</option>
+                                                                    <option value="gallery-columns-2">2</option>
+                                                                    <option value="gallery-columns-3">3</option>
+                                                                    <option value="gallery-columns-4">4</option>
+                                                                    <option value="gallery-columns-5" selected="selected">5</option>
+                                                                </select>
+                                                            </div>
+                                                            <!-- field -->
+                                                        </div>
+                                                        <div class="field-option">
+                                                            <input  id="margin"  name="margin" type="checkbox" value="margin">
+                                                            <label for="margin" class="field-option-label">Enable margin</label>
+                                                        </div>
+                                                        <div class="field-option">
+                                                            <input  id="outline"  name="outline" type="checkbox" value="outline">
+                                                            <label for="outline" class="field-option-label">Enable outline</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="ac l25">
+                                                        <div class="field-wrapper ">
+                                                            <div class="field-label">
+                                                                <label>
+                                                                    <h4 class="field-title">
+                                                                        Gallery layout
+                                                                    </h4>
+                                                                </label>
+                                                            </div>
+                                                            <!-- field label-->
+                                                            <div class="field field-type-select">
+                                                                <select class="browser-default " name="theme">
+                                                                    <option value="">Select layout</option>
+                                                                    <option value="landscape" selected="selected">Landscape</option>
+                                                                    <option value="portrait">Portrait</option>
+                                                                    <option value="square">Square</option>
+                                                                    <option value="circle">Circle</option>
+                                                                </select>
+                                                            </div>
+                                                            <!-- field -->
+                                                        </div>
+                                                    </div>
+                                                    <div class="ac l25">
+                                                        <div class="field-wrapper ">
+                                                            <div class="field-label">
+                                                                <label>
+                                                                    <h4 class="field-title">
+                                                                        Select animation
+                                                                    </h4>
+                                                                </label>
+                                                            </div>
+                                                            <!-- field label-->
+                                                            <div class="field field-type-select">
+                                                                <select class="browser-default " name="theme">
+                                                                    <option value="">No animation</option>
+                                                                    <option value="animation-zoom" selected="selected">Animation zoom</option>
+                                                                    <option value="animation-rotate">Animation rotate</option>
+                                                                    <option value="animation-zoomrotate">Animation zoomrotate</option>
+                                                                    <option value="animation-mxrotate">Animation mxrotate</option>
+                                                                    <!-- <option value="theme-arrow">Theme arrow</option> -->
+                                                                </select>
+                                                            </div>
+                                                            <!-- field -->
+                                                        </div>
+                                                    </div>
+                                                    <div class="ac l25">
+                                                        <div class="field-wrapper ">
+                                                            <div class="field-label">
+                                                                <label>
+                                                                    <h4 class="field-title">
+                                                                        Select transition
+                                                                    </h4>
+                                                                </label>
+                                                            </div>
+                                                            <!-- field label-->
+                                                            <div class="field field-type-select">
+                                                                <select class="browser-default " name="theme">
+                                                                    <option value="">Select transition</option>
+                                                                    <option value="transition-fade-bottom">Transition Fade Bottom</option>
+                                                                    <option value="transition-fade-left">Transition Fade Left</option>
+                                                                    <option value="transition-fade-right">Transition Fade Right</option>
+                                                                    <option value="transition-fade-top">Transition Fade Top</option>
+                                                                    <option value="transition-mxrotate-bottom">Transition Mxrotate Bottom</option>
+                                                                    <option value="transition-mxrotate-left">Transition Mxrotate Left</option>
+                                                                    <option value="transition-mxrotate-right">Transition Mxrotate Right</option>
+                                                                    <option value="transition-mxrotate-top">Transition Mxrotate Top</option>
+                                                                    <option value="transition-slide-bottom">Transition Slide Bottom</option>
+                                                                    <option value="transition-slide-left">Transition Slide Left</option>
+                                                                    <option value="transition-slide-right">Transition Slide Right</option>
+                                                                    <option value="transition-slide-top">Transition Slide Top</option>
+                                                                    <option value="transition-push-bottom">Transition Push Bottom</option>
+                                                                    <option value="transition-push-left">Transition Push Left</option>
+                                                                    <option value="transition-push-right">Transition Push Right</option>
+                                                                    <option value="transition-push-top">Transition Push Top</option>
+                                                                    <option value="transition-rotateslide-bottom">Transition Rotateslide Bottom</option>
+                                                                    <option value="transition-rotateslide-left">Transition Rotateslide Left</option>
+                                                                    <option value="transition-rotateslide-right">Transition Rotateslide Right</option>
+                                                                    <option value="transition-rotateslide-top">Transition Rotateslide Top</option>
+                                                                    <option value="transition-flip-bottom">Transition Flip Bottom</option>
+                                                                    <option value="transition-flip-left">Transition Flip Left</option>
+                                                                    <option value="transition-flip-right">Transition Flip Right</option>
+                                                                    <option value="transition-flip-top">Transition Flip Top</option>
+                                                                    <option value="transition-minimize-bottom">Transition Minimize Bottom</option>
+                                                                    <option value="transition-minimize-left">Transition Minimize Left</option>
+                                                                    <option value="transition-minimize-right">Transition Minimize Right</option>
+                                                                    <option value="transition-minimize-top">Transition Minimize Top</option>
+
+                                                                </select>
+                                                            </div>
+                                                            <!-- field -->
+                                                        </div>
+                                                       
+                                                    </div>
+                                                </div>
+                                            </form>
+                                            </div> 
+                                        </section>
+                                        <section class="content">
+                                            <div class="aione-tabs theme-bold horizontal align-left">
+                                                <div class="nav bg-grey bg-lighten-2">
+                                                    <div data-target="#tab_preview" class="active">
+                                                        <i class="ion-monitor pr-10">
+                                                        </i>
+                                                        Preview
+                                                    </div>
+                                                    <div data-target="#tab_code" class="">
+                                                        <i class="ion-code pr-10">
+                                                        </i>
+                                                        Code
+                                                    </div>
+                                                </div>
+                                                <div class="content p-20">
+                                                    <div id="tab_preview" class="active">
+                                                        <div class="gallery gallery-columns-3 margin outline square animation-rotate">
+                                                            <div class="gallery-item">
+                                                                <div class="gallery-icon">
+                                                                    <img src="http://aioneframework.com/resources/images/gallery/gallery-5.jpg"/>
+                                                                </div>
+                                                                <div class="gallery-caption">
+                                                                    <h3>
+                                                                        Image Title 
+                                                                    </h3>
+                                                                    <p>
+                                                                        Image Description
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="gallery-item">
+                                                                <div class="gallery-icon">
+                                                                    <img src="http://aioneframework.com/resources/images/gallery/gallery-5.jpg"/>
+                                                                </div>
+                                                                <div class="gallery-caption">
+                                                                    <h3>
+                                                                        Image Title 
+                                                                    </h3>
+                                                                    <p>
+                                                                        Image Description
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="gallery-item">
+                                                                <div class="gallery-icon">
+                                                                    <img src="http://aioneframework.com/resources/images/gallery/gallery-5.jpg"/>
+                                                                </div>
+                                                                <div class="gallery-caption">
+                                                                    <h3>
+                                                                        Image Title 
+                                                                    </h3>
+                                                                    <p>
+                                                                        Image Description
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="gallery-item">
+                                                                <div class="gallery-icon">
+                                                                    <img src="http://aioneframework.com/resources/images/gallery/gallery-5.jpg"/>
+                                                                </div>
+                                                                <div class="gallery-caption">
+                                                                    <h3>
+                                                                        Image Title 
+                                                                    </h3>
+                                                                    <p>
+                                                                        Image Description
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="gallery-item">
+                                                                <div class="gallery-icon">
+                                                                    <img src="http://aioneframework.com/resources/images/gallery/gallery-5.jpg"/>
+                                                                </div>
+                                                                <div class="gallery-caption">
+                                                                    <h3>
+                                                                        Image Title 
+                                                                    </h3>
+                                                                    <p>
+                                                                        Image Description
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="gallery-item">
+                                                                <div class="gallery-icon">
+                                                                    <img src="http://aioneframework.com/resources/images/gallery/gallery-5.jpg"/>
+                                                                </div>
+                                                                <div class="gallery-caption">
+                                                                    <h3>
+                                                                        Image Title 
+                                                                    </h3>
+                                                                    <p>
+                                                                        Image Description
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                   
+                                                    <div id="tab_code" class="bg-grey bg-darken-4">
+                                                        <div data-target="#tab_copy" data-clipboard-target="#tab_code_code" class="clipboard bg-white blue"><i class="ion-clipboard pr-10"></i>Copy Code</div>
+                                                        <textarea id="tab_code_code" class="aione-code"></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </section>
                                     </div>
                                 </div>
                             </div>
