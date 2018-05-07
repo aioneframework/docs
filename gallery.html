@@ -25,6 +25,18 @@
         <script type="text/javascript" src="https://cdn.aioneframework.com/assets/js/aione.min.js"></script>
         <script type="text/javascript" src="assets/js/script.js"></script>
     </head>
+    <style type="text/css">
+    .gallery-caption:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+
+        background-color: rgba(0,0,0,0.4);
+}
+    </style>
     <body>
         <div id="aione_wrapper" class="aione-wrapper layout-header-left aione-layout-wide aione-theme-arcane">
             <div class="wrapper">
@@ -80,8 +92,8 @@
                                                                     <option value="gallery-columns-1">1</option>
                                                                     <option value="gallery-columns-2">2</option>
                                                                     <option value="gallery-columns-3">3</option>
-                                                                    <option value="gallery-columns-4">4</option>
-                                                                    <option value="gallery-columns-5" selected="selected">5</option>
+                                                                    <option value="gallery-columns-4" selected="selected">4</option>
+                                                                    <option value="gallery-columns-5" >5</option>
                                                                 </select>
                                                             </div>
                                                             <!-- field -->
@@ -108,7 +120,7 @@
                                                             <div class="field field-type-select">
                                                                 <select class="browser-default " name="theme">
                                                                     <option value="">Select layout</option>
-                                                                    <option value="landscape" selected="selected">Landscape</option>
+                                                                    <option value="landscape" selected="selected">Rounded</option>
                                                                     <option value="portrait">Portrait</option>
                                                                     <option value="square">Square</option>
                                                                     <option value="circle">Circle</option>
@@ -116,6 +128,28 @@
                                                             </div>
                                                             <!-- field -->
                                                         </div>
+                                                          <div class="field-wrapper ">
+                                                            <div class="field-label">
+                                                                <label>
+                                                                    <h4 class="field-title">
+                                                                    Select Theme
+                                                                    </h4>
+                                                                </label>
+                                                            </div>
+
+                                                            <div class="field field-type-select">
+                                                                <select class="browser-default " name="theme">
+                                                                    <option value="">Select theme</option>
+                                                                    <option value="theme-clean" selected="selected">Theme Clean</option>
+                                                                    <option value="theme-bold">Theme Bold</option>
+                                                                    <option value="theme-pastel">Theme pastel</option>
+                                                                    <option value="theme-pointer">Theme pointer</option>
+                                                                    <option value="theme-arrow">Theme arrow</option>
+                                                                </select>
+                                                            </div>
+
+                                                            </div>  
+
                                                     </div>
                                                     <div class="ac l25">
                                                         <div class="field-wrapper ">
@@ -211,78 +245,78 @@
                                                         <div class="gallery gallery-columns-3 margin outline square animation-rotate">
                                                             <div class="gallery-item">
                                                                 <div class="gallery-icon">
-                                                                    <img src="http://aioneframework.com/resources/images/gallery/gallery-5.jpg"/>
+                                                                    <img src="assets/images/gallery-1.jpg"/>
                                                                 </div>
                                                                 <div class="gallery-caption">
-                                                                    <h3>
+                                                                    <h3 class="white">
                                                                         Image Title 
                                                                     </h3>
-                                                                    <p>
+                                                                    <p class="white">
                                                                         Image Description
                                                                     </p>
                                                                 </div>
                                                             </div>
                                                             <div class="gallery-item">
                                                                 <div class="gallery-icon">
-                                                                    <img src="http://aioneframework.com/resources/images/gallery/gallery-5.jpg"/>
+                                                                    <img src="assets/images/gallery-2.jpg"/>
                                                                 </div>
                                                                 <div class="gallery-caption">
-                                                                    <h3>
+                                                                    <h3 class="white">
                                                                         Image Title 
                                                                     </h3>
-                                                                    <p>
+                                                                    <p class="white">
                                                                         Image Description
                                                                     </p>
                                                                 </div>
                                                             </div>
                                                             <div class="gallery-item">
                                                                 <div class="gallery-icon">
-                                                                    <img src="http://aioneframework.com/resources/images/gallery/gallery-5.jpg"/>
+                                                                    <img src="assets/images/gallery-3.jpg"/>
                                                                 </div>
                                                                 <div class="gallery-caption">
-                                                                    <h3>
+                                                                    <h3 class="white">
                                                                         Image Title 
                                                                     </h3>
-                                                                    <p>
+                                                                    <p class="white">
                                                                         Image Description
                                                                     </p>
                                                                 </div>
                                                             </div>
                                                             <div class="gallery-item">
                                                                 <div class="gallery-icon">
-                                                                    <img src="http://aioneframework.com/resources/images/gallery/gallery-5.jpg"/>
+                                                                    <img src="assets/images/gallery-5.jpg"/>
                                                                 </div>
                                                                 <div class="gallery-caption">
-                                                                    <h3>
+                                                                    <h3 class="white">
                                                                         Image Title 
                                                                     </h3>
-                                                                    <p>
+                                                                    <p class="white">
                                                                         Image Description
                                                                     </p>
                                                                 </div>
                                                             </div>
                                                             <div class="gallery-item">
                                                                 <div class="gallery-icon">
-                                                                    <img src="http://aioneframework.com/resources/images/gallery/gallery-5.jpg"/>
+                                                                    <img src="assets/images/gallery-6.jpg"/>
                                                                 </div>
                                                                 <div class="gallery-caption">
-                                                                    <h3>
+                                                                    <h3 class="white">
                                                                         Image Title 
                                                                     </h3>
-                                                                    <p>
+                                                                    <p class="white">
                                                                         Image Description
                                                                     </p>
                                                                 </div>
                                                             </div>
                                                             <div class="gallery-item">
                                                                 <div class="gallery-icon">
-                                                                    <img src="http://aioneframework.com/resources/images/gallery/gallery-5.jpg"/>
+                                                                    <img src="assets/images/gallery-9.jpg"/>
                                                                 </div>
                                                                 <div class="gallery-caption">
-                                                                    <h3>
+                                                                    <h3 class="white">
                                                                         Image Title 
                                                                     </h3>
-                                                                    <p>
+                                                                    <p class="white">
                                                                         Image Description
                                                                     </p>
                                                                 </div>

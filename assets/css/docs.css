@@ -45,7 +45,11 @@
 	margin-right: 10px;
 }
 
-
+.option-heading{
+	background-color: #e0e0e0;
+	padding: 12px;
+	font-size: 18px;
+}
 
 .logo{
 	padding: 5px;
