@@ -11,21 +11,16 @@ $(document).ready(function() {
 
 	function load_options(){
 		var classes = [];
-		var data = [];
-        var options_data = $(this).find("form").serializeArray();
-        console.log("options_data");
-        	console.log(options_data);
+        var options_data = $('.options').find("form").serializeArray();
         jQuery.each( options_data, function( index, field ) {
-        	console.log("Index"+index);
-        	console.log("field");
-        	console.log(field);
-        	if(false){
-
+        	var field_name = field.name;
+        	if(field_name.indexOf("data-") >= 0){
+        		$( "#tab_preview > *").attr(field.name,field.value);
         	} else{
-        	}
           		classes.push(field.value);
+        	}
         });
-        classes.join(" ")
+        classes = classes.join(" ");
         $( "#tab_preview > *").attr('class',classes);
         $( "#tab_code > textarea").val($( "#tab_preview > *")[0].outerHTML);
 	}
