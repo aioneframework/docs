@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <title>Aione Framework Documentation</title>
     <!-- Aione framework website, 3D websites, Grid system -->
@@ -16,7 +15,6 @@
     <meta name="copyright" content="©2017 OXO IT SOLUTIONS PRIVATE LIMITED" />
     <meta name="robots" content="All" />
     <meta name="application-name" content="Aione Framework Documentation">
-
     <!-- Global stylesheets -->
     <link rel="stylesheet" type="text/css" href="https://cdn.aioneframework.com/assets/css/aione.min.css">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600,800">
@@ -24,8 +22,12 @@
     <script type="text/javascript" src="https://cdn.aioneframework.com/assets/js/vendor.min.js"></script>
     <script type="text/javascript" src="https://cdn.aioneframework.com/assets/js/aione.min.js"></script>
     <script type="text/javascript" src="assets/js/script.js"></script>
+    <style type="text/css">
+        .aione-nav ul li a{
+          display: inline-block;
+        }
+    </style>
 </head>
-
 <body>
     <div id="aione_wrapper" class="aione-wrapper layout-header-left aione-layout-wide aione-theme-arcane">
         <div class="wrapper">
@@ -53,8 +55,8 @@
                                             <div class="aione-row">
                                                 <div class="aione-page-content-primary p-20">
                                                 	<section class="options">
-                                            <div class=" ar aione-border mb-20">
-                                            <form>
+                                                <div class=" ar aione-border mb-20">
+                                               <form>
                                                 <input type="hidden" name="component" value="aione-nav">
                                                 <div class="option-heading">
                                                     Select Options to generate Effects
@@ -65,7 +67,7 @@
                                                             <div class="field-label">
                                                                 <label>
                                                                     <h4 class="field-title">
-                                                                        Aione Left Breadcrumb
+                                                                      Aione Left Breadcrumb
                                                                     </h4>
                                                                 </label>
                                                             </div>
@@ -73,9 +75,9 @@
                                                             <div class="field field-type-select">
                                                                 <select class="browser-default" name="theme">
                                                                     <option value="">Select layout</option>
-                                                                    <option value="underline-left">Left Breadcrumb
+                                                                    <option value="left-breadcrumbs">Left Breadcrumb
                                                                     </option>
-                                                                    <option value="underline-right">Right Breadcrumb</option>
+                                                                    <option value="right-breadcrumbs">Right Breadcrumb</option>
                                                                   </select>
                                                             </div>
                                                             <!-- field -->
@@ -93,7 +95,7 @@
                                                             <!-- field label-->
                                                             <div class="field field-type-select">
                                                                 <select class="browser-default" name="theme">
-                                                                    <option value="">Select layout</option>
+                                                                    <option value="">Menu layout</option>
                                                                     <option value="horizontal">Horizontal
                                                                     </option>
                                                                     <option value="vertical">Vertical</option>
@@ -106,7 +108,46 @@
                                             </form>
                                             </div> 
                                         </section>
-                                                    
+                                         <section class="content">
+                                            <div class="aione-tabs theme-bold horizontal align-left">
+                                                <div class="nav bg-grey bg-lighten-2">
+                                                    <div data-target="#tab_preview" class="active">
+                                                        <i class="ion-monitor pr-10">
+                                                        </i>
+                                                        Preview
+                                                    </div>
+                                                    <div data-target="#tab_code" class="">
+                                                        <i class="ion-code pr-10">
+                                                        </i>
+                                                        Code
+                                                    </div>
+                                                </div>
+                                                <div class="content p-20">
+<div id="tab_preview" class="active ">
+    <div class="aione-breadcrumbs-container aione-float-right">
+        <ul id="aione_breadcrumbs" class="aione-breadcrumbs aione-navigation">
+            <li>
+                <a href="#">
+                  <i class="fa fa-home">
+                  </i>
+                </a>
+            </li>
+            <li>
+                <a href="#"> Account</a>
+            </li>
+            <li>
+                <a href="#"> Profile</a>
+            </li>
+        </ul>
+    </div>
+ </div>
+                                                  <div id="tab_code" class="bg-grey bg-darken-4">
+                                                    <div data-target="#tab_copy" data-clipboard-target="#tab_code_code" class="clipboard bg-white blue"><i class="ion-clipboard pr-10"></i>Copy Code</div>
+                                                    <textarea id="tab_code_code" class="aione-code"></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </section>           
 									 </div>     
 									</div>            
 									</div>	
@@ -119,10 +160,8 @@
 					<div id="aione_copyright" class="aione-copyright load-template"></div><!-- .aione-copyright -->
 				</div><!-- .wrapper -->
 			</div><!-- .aione-main -->
-
-		</div><!-- .wrapper -->
+    </div><!-- .wrapper -->
 	</div><!-- .aione-wrapper -->
 </div>
-
 </body>
 </html>
