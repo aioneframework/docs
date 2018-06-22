@@ -44,29 +44,6 @@
                                       <div class="field-label">
                                           <label for="input_radio">
                                               <h4 class="field-title">
-                                                  Select Direction
-                                              </h4>
-                                          </label>
-                                      </div>
-                                      <!-- field label-->
-                                      <div class="field field-type-radio">
-                                          <div class="field-option">
-                                              <input checked="checked" class="radio " id="horizontal" name="direction" type="radio" value="horizontal">
-                                              <label for="horizontal" class="field-option-label">Horizontal</label>
-                                          </div>
-                                          <div class="field-option">
-                                            <input class="radio " id="vertical" name="direction" type="radio" value="vertical">
-                                              <label for="vertical" class="field-option-label">Vertical</label>
-                                          </div>
-                                      </div>
-                                      <!-- field -->
-                                  </div>
-                             </div>
-                              <div class="ac l25">
-                                  <div class="field-wrapper ">
-                                      <div class="field-label">
-                                          <label for="input_radio">
-                                              <h4 class="field-title">
                                                 Select Size
                                               </h4>
                                           </label>
@@ -105,7 +82,7 @@
                                       <!-- field label-->
                                       <div class="field field-type-radio">
                                           <div class="field-option">
-                                              <input class="radio" id="square" name="style" type="radio" value="square">
+                                              <input class="radio" id="square" name="style" type="radio" value="square"  checked="checked">
                                               <label for="square" class="field-option-label">Square</label>
                                           </div>
                                           <div class="field-option">
@@ -123,6 +100,29 @@
                               <div class="ac l25">
                                   <div class="field-wrapper ">
                                       <div class="field-label">
+                                          <label for="input_radio">
+                                              <h4 class="field-title">
+                                                  Select Direction
+                                              </h4>
+                                          </label>
+                                      </div>
+                                      <!-- field label-->
+                                      <div class="field field-type-radio">
+                                          <div class="field-option">
+                                              <input checked="checked" class="radio " id="horizontal" name="direction" type="radio" value="horizontal">
+                                              <label for="horizontal" class="field-option-label">Horizontal</label>
+                                          </div>
+                                          <div class="field-option">
+                                            <input class="radio " id="vertical" name="direction" type="radio" value="vertical">
+                                              <label for="vertical" class="field-option-label">Vertical</label>
+                                          </div>
+                                      </div>
+                                      <!-- field -->
+                                  </div>
+                             </div>
+                              <div class="ac l25">
+                                  <div class="field-wrapper ">
+                                      <div class="field-label">
                                           <label>
                                               <h4 class="field-title">
                                                   Select Theme
@@ -134,12 +134,12 @@
                                           <select class="browser-default " name="theme">
                                               <option value="">Select theme</option>
                                               <option value="colored" selected="selected">Colored</option>
-                                              <option value="light">Light</option>
-                                              <option value="light-solid">Light Solid</option>
-                                              <option value="light-outline">Light Outline</option>
                                               <option value="dark">Dark</option>
                                               <option value="dark-solid">Dark Solid</option>
                                               <option value="dark-outline">Dark Outline</option>
+                                              <option value="light bg-black">Light</option>
+                                              <option value="light-solid bg-black">Light Solid</option>
+                                              <option value="light-outline bg-black">Light Outline</option>  
                                           </select>
                                       </div>
                                       <!-- field -->
@@ -156,8 +156,8 @@
                   <section class="content">
                     <div class="aione-tabs theme-bold horizontal align-left">
                       <div class="nav bg-grey bg-lighten-2">
-                          <div data-target="#tab_preview" class="active"><i class="ion-monitor pr-10"></i>Preview</div>
-                          <div data-target="#tab_code" class=""><i class="ion-code pr-10"></i>Code</div>
+                          <div data-target="#tab_preview" class="active"><i class="ion ion-ios-desktop pr-10"></i>Preview</div>
+                          <div data-target="#tab_code" class=""><i class="ion ion-ios-code pr-10"></i>Code</div>
                       </div>
                       <div class="content">
                           <div id="tab_preview" class="active">
