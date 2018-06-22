@@ -2,11 +2,11 @@ $(document).ready(function() {
 	load_options();
 	$(document).on('click', '.options', function(e) {
 		load_options();
-		//init_sliders();
+		reset_sliders();
 	});
 	$(document).on('change', '.options input, .options select', function(e) {
 		load_options();
-		//init_sliders(); 
+		reset_sliders();
 	});
 
 	function load_options(){
