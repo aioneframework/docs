@@ -45,43 +45,89 @@
                             </div><!-- .aione-title -->
                         </div> <!-- .wrapper -->
                     </div><!-- .aione-pagetitle -->
+                     <section class="options">
+                    <div class="ar aione-border mb-20 mt-20">
+                      <form>
+                          <input type="hidden" name="component" value="aione-message">
+                          <!-- <div class="option-heading">
+                            Change options to see different Button styles 
+                          </div> -->
+                          <div class="ar">
+                              <div class="ac l25">
+                                  <div class="field-wrapper ">
+                                      <div class="field-label">
+                                          <label>
+                                              <h4 class="field-title">
+                                                Select Massage
+                                              </h4>
+                                          </label>
+                                      </div>
+                                      <!-- field label-->
+                                      <div class="field field-type-select">
+                                          <select class="browser-default" name="theme">
+                                            <option value="">Aione Massage</option>
+                                            <option value="warning">Aione Massage Warning</option>
+                                            <option value="success">Aione Massage Success</option>
+                                            <option value="error">Aione Massage Error</option>
+                                          </select>
+                                        </div>
+                                   </div>
+                                </div>
+                          </div>
+                      </form>
+                    </div> 
+                  </section>
                     <div id="aione_content" class="aione-content">
                         <div class="wrapper">
                             <div id="aione_page_content" class="aione-page-content">
                                  <div class="wrapper">
                             <div id="aione_page_content" class="aione-page-content">
-                                <div class="wrapper">
+                               <section class="content">
+                                  <div class="aione-tabs theme-bold horizontal align-left aione-border p-10">
+                                    <div class="nav bg-grey bg-lighten-2">
+                                        <div data-target="#tab_preview" class="active"><i class="ion ion-ios-desktop pr-10"></i>Preview</div>
+                                        <div data-target="#tab_code" class=""><i class="ion ion-ios-code pr-10"></i>Code</div>
+                                    </div>
+                                    <div class="content">
+                                        <div id="tab_preview" class="active">
+<div class="aione-message">
+  <ul class="aione-messages">
+    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, vero?</li>
+    <li>Officiis ratione, nesciunt vel corrupti adipisci. Voluptates expedita sequi dolores.</li>
+    <li>Recusandae sint eum veniam, blanditiis pariatur quisquam impedit consequatur exercitationem?</li>
+  </ul>
+</div>
+                                        </div>
+                                        <div id="tab_code" class="bg-grey bg-darken-4">
+                                          <div data-target="#tab_copy" data-clipboard-target="#tab_code_code" class="clipboard bg-white blue"><i class="ion-clipboard pr-10"></i>Copy Code</div>
+                                          <textarea id="tab_code_code" class="aione-code">
+                                            <div class="aione-message ">
+  <ul class="aione-messages">
+    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, vero?</li>
+    <li>Officiis ratione, nesciunt vel corrupti adipisci. Voluptates expedita sequi dolores.</li>
+    <li>Recusandae sint eum veniam, blanditiis pariatur quisquam impedit consequatur exercitationem?</li>
+  </ul>
+</div>
 
+                                          </textarea>
+                                        </div>
+                                    </div>
+                                  </div>    
+                                </section>
+                                <!-- <div class="wrapper">
                                         <div class="ar">
-                                            <div class="ac s100 m50 l50">
+                                            <div class="ac s100 m50 l100">
                                                 <div class="aione-message">
                                                     <ul class="aione-messages">
-                                                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, vero?</li>
-                                                        <li>Officiis ratione, nesciunt vel corrupti adipisci. Voluptates expedita sequi dolores.</li>
-                                                        <li>Recusandae sint eum veniam, blanditiis pariatur quisquam impedit consequatur exercitationem?</li>
+                                                      <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, vero?</li>
+                                                      <li>Officiis ratione, nesciunt vel corrupti adipisci. Voluptates expedita sequi dolores.</li>
+                                                      <li>Recusandae sint eum veniam, blanditiis pariatur quisquam impedit consequatur exercitationem?</li>
                                                     </ul>
                                                 </div>
                                             </div>
-                                            <div class="ac s100 m50 l50">
-                                                <div class="field-wrapper ac field-wrapper-type-code small">
-                                                    <div class="field field-type-code">
-                                        <textarea id="message" class="bg-black white">
-                                        <div class="aione-message">
-                                            <ul class="aione-messages">
-                                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, vero?</li>
-                                                <li>Officiis ratione, nesciunt vel corrupti adipisci. Voluptates expedita sequi dolores.</li>
-                                                <li>Recusandae sint eum veniam, blanditiis pariatur quisquam impedit consequatur exercitationem?</li>
-                                            </ul>
-                                        </div>
-                                        </textarea>
-                                                    <div id="message_editor" class="aione-code-editor" data-mode="html"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="ar">
-                                            <div class="ac s100 m50 l50">
+                                         </div>
+                                          <div class="ar">
+                                            <div class="ac s100 m50 l100">
                                                 <div class="aione-message success">
                                                     <ul class="aione-messages">
                                                         <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, voluptas.</li>
@@ -90,26 +136,10 @@
                                                     </ul>
                                                 </div>
                                             </div>
-                                            <div class="ac s100 m50 l50">
-                                                <div class="field-wrapper ac field-wrapper-type-code small">
-                                                    <div class="field field-type-code">
-                                        <textarea id="success_message" class="bg-black white">
-                                        <div class="aione-message success">
-                                            <ul class="aione-messages">
-                                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, voluptas.</li>
-                                                <li>Id doloribus eveniet quod, quam libero soluta provident quas minima.</li>
-                                                <li>Mollitia provident ipsa voluptatem vitae fugiat nulla temporibus nemo, sunt.</li>
-                                            </ul>
-                                        </div>
-                                        </textarea>
-                                                    <div id="success_message_editor" class="aione-code-editor" data-mode="html"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                         </div>
 
                                         <div class="ar">
-                                            <div class="ac s100 m50 l50">
+                                            <div class="ac s100 m50 l100">
                                                 <div class="aione-message warning">
                                                     <ul class="aione-messages">
                                                         <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, vero?</li>
@@ -118,26 +148,10 @@
                                                     </ul>
                                                 </div>
                                             </div>
-                                            <div class="ac s100 m50 l50">
-                                                <div class="field-wrapper ac field-wrapper-type-code small">
-                                                    <div class="field field-type-code">
-                                        <textarea id="warning_message" class="bg-black white">
-                                        <div class="aione-message warning">
-                                            <ul class="aione-messages">
-                                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, vero?</li>
-                                                <li>Officiis ratione, nesciunt vel corrupti adipisci. Voluptates expedita sequi dolores.</li>
-                                                <li>Recusandae sint eum veniam, blanditiis pariatur quisquam impedit consequatur exercitationem?</li>
-                                            </ul>
-                                        </div>
-                                        </textarea>
-                                                    <div id="warning_message_editor" class="aione-code-editor" data-mode="html"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                         </div>
 
                                         <div class="ar">
-                                            <div class="ac s100 m50 l50">
+                                            <div class="ac s100 m50 l100">
                                                 <div class="aione-message error">
                                                     <ul class="aione-messages">
                                                         <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, vero?</li>
@@ -146,28 +160,8 @@
                                                     </ul>
                                                 </div>
                                             </div>
-                                            <div class="ac s100 m50 l50">
-                                                <div class="field-wrapper ac field-wrapper-type-code small">
-                                                    <div class="field field-type-code">
-                                        <textarea id="error_message" class="bg-black white">
-                                        <div class="aione-message error">
-                                            <ul class="aione-messages">
-                                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, vero?</li>
-                                                <li>Officiis ratione, nesciunt vel corrupti adipisci. Voluptates expedita sequi dolores.</li>
-                                                <li>Recusandae sint eum veniam, blanditiis pariatur quisquam impedit consequatur exercitationem?</li>
-                                            </ul>
-                                        </div>
-                                        </textarea>
-                                                    <div id="error_message_editor" class="aione-code-editor" data-mode="html"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-
-
-        
-                                    </div>
+                                         </div>
+                                      </div> -->
                                 </div>
                             </div>
                         </div><!-- .wrapper -->
