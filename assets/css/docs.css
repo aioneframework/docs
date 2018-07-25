@@ -73,6 +73,111 @@
 .aione-nav.vertical.light ul li.nav-item-selected > a{
 	background-color: #f8f8f8;
 }
+   .mysec
+   {
+   position: relative;
+   }
+   .mydiv
+   {
+   left: 14%;
+   position: absolute;
+   top:34%;
+   width: 142px;
+   height: 135px;
+   background-color: white;
+   }
+   .mydiv1
+   {
+   left:44%;
+   position: absolute;
+   top:34%;
+   width: 142px;
+   height: 135px;
+   background-color: white;	
+   }
+   .mydiv2
+   {
+   left:75%;
+   position: absolute;
+   top:34%;
+   width: 142px;
+   height: 132px;
+   background-color: white;	
+   }
+   @media (max-width: 991px) and (min-width: 610px)
+   {
+   	.ac
+   {
+       padding-top:40px;
+   }
+.mydiv {
+    left: 38%;
+    position: absolute;
+    top: 16%;
+    width: 142px;
+    height: 135px;
+    background-color: white;
+}
+   .mydiv1
+   {
+      left:42%;
+      position: absolute;
+      top: 45%;
+      width: 142px;
+      height: 135px;
+      background-color: white;	
+   }
+   .mydiv2
+   {
+      left: 42%;
+      position: absolute;
+      top: 73%;
+      width: 142px;
+      height: 135px;
+      background-color: white;	
+   }
+   .new
+   {
+      margin-top:55px;
+   }
+   }
 
-
+   @media (max-width:610px){
+   .ac
+   {
+       padding-top:40px;
+   }
+   .mydiv
+   {
+      left: 38%;
+      position: absolute;
+      top: 13%;
+      width: 142px;
+      height: 135px;
+      background-color: white;
+   }
+   .mydiv1
+   {
+      left: 36%;
+      position: absolute;
+      top: 41%;
+      width: 142px;
+      height: 135px;
+      background-color: white;	
+   }
+   .mydiv2
+   {
+      left: 37%;
+      position: absolute;
+      top: 70%;
+      width: 142px;
+      height: 135px;
+      background-color: white;	
+   }
+   .new
+   {
+       margin-top:55px;
+   }
+   }
+   
  

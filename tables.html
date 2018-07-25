@@ -23,6 +23,11 @@
       <script type="text/javascript" src="https://cdn.aioneframework.com/assets/js/aione.min.js"></script>
       <script type="text/javascript" src="assets/js/script.js"></script>
    </head>
+   <style type="text/css">
+   	.aione-page-content{
+   	 min-height: 0px;
+   	}
+   </style>
    <body>
       <div id="aione_wrapper" class="aione-wrapper layout-header-left aione-layout-wide aione-theme-arcane">
          <div class="wrapper">
@@ -48,12 +53,58 @@
                      <div class="wrapper">
                         <div id="aione_page_content" class="aione-page-content">
                            <div class="wrapper">
-                              <div class="ar mt-20">
-                                 <div>
-                                    <h4 class="bg-grey bg-darken-4 p-10 white m-0">Compact</h4>
+                           	<section class="options">
+                            <div class=" ar aione-border mb-20">
+                            <form>
+                                <input type="hidden" name="component" value="">
+                                <div class="option-heading">
+                                    Select Options to generate Tables
+                                </div>
+                                <div class="ar">
+                                    <div class="ac l25">
+                                        <div class="field-wrapper">
+                                            <div class="field-label">
+                                                <label>
+                                                    <h4 class="field-title">
+                                                        Classes of Tables
+                                                    </h4>
+                                                </label>
+                                            </div>
+                                            <!-- field label-->
+                                            <div class="field field-type-select">
+                                                <select class="browser-default " name="theme">
+                                                    <option value="">Select Table</option>
+                                                    <option value="Compact">Compact</option>
+                                                    <option value="wide">Wide</option>
+                                                    <option value="rounded">rounded</option>
+                                                 </select>
+                                            </div> 
+                                            <!-- field -->
+                                        </div>
+                                    </div>
+                                   </div>
+                                  </div> 
                                  </div>
-                                 <div class="aione-table ">
-                                    <table class="compact">
+                            </form>
+                            </div> 
+                        </section>
+													<section class="content">
+                            <div class="aione-tabs theme-bold horizontal align-left">
+                                <div class="nav bg-grey bg-lighten-2">
+                                    <div data-target="#tab_preview" class="active">
+                                        <i class="ion-monitor pr-10">
+                                        </i>
+                                        Preview
+                                    </div>
+                                    <div data-target="#tab_code" class="">
+                                        <i class="ion-code pr-10">
+                                        </i>
+                                        Code
+                                    </div>
+                                </div>
+                                <div class="content p-20">
+                                <div id="tab_preview" class="active aione-table">
+                                   <table class="compact">
                                        <thead>
                                           <tr>
                                              <th>Name</th>
@@ -79,93 +130,15 @@
                                           </tr>
                                        </tbody>
                                     </table>
+                                </div>
+                                <div id="tab_code" class="bg-grey bg-darken-4">
+                                    <div data-target="#tab_copy" data-clipboard-target="#tab_code_code" class="clipboard bg-white blue"><i class="ion-clipboard pr-10"></i>Copy Code</div>
+                                    <textarea id="tab_code_code" class="aione-code"></textarea>
                                  </div>
-                                 <div class="p-20 aione-border aione-border-top-none pl-50">
-                                    <code class="blue-grey darken-4 font-size-17 line-height-27 font-weight-400">
-                                       <p>&lt;div class="aione-table"&gt;</p>
-                                       <p class="ml-30">&lt;table class="compact" &gt;</p>
-                                       <p class="ml-60">&lt;thead&gt;</p>
-                                       <p class="ml-80">&lt;tr&gt;</p>
-                                       <p class="ml-100">&lt;th&gt;Name &lt;/th&gt;</p>
-                                       <p class="ml-100">&lt;th&gt;Item Name &lt;/th&gt;</p>
-                                       <p class="ml-100">&lt;th&gt;Item Price &lt;/th&gt;</p>
-                                       <p class="ml-80">&lt;/tr&gt;</p>
-                                       <p class="ml-60">&lt;/thead&gt;</p>
-                                       <p class="ml-80">&lt;tr&gt;</p>
-                                       <p class="ml-100">&lt;td&gt;Alvin &lt;/td&gt;</p>
-                                       <p class="ml-100">&lt;td&gt;Eclair &lt;/td&gt;</p>
-                                       <p class="ml-100">&lt;td&gt;$0.87 &lt;/td&gt;</p>
-                                       <p class="ml-80">&lt;/tr&gt;</p>
-                                       <p class="ml-80">&lt;tr&gt;</p>
-                                       <p class="ml-100">&lt;td&gt;Alan &lt;/td&gt;</p>
-                                       <p class="ml-100">&lt;td&gt;Jellybean &lt;/td&gt;</p>
-                                       <p class="ml-100">&lt;td&gt;$3.76&lt;/td&gt;</p>
-                                       <p class="ml-80">&lt;/tr&gt;</p>
-                                       <p class="ml-30">&lt;/table  &gt;</p>
-                                       <p>&lt;/div&gt;</p>
-                                    </code>
-                                 </div>
-                              </div>
-                              <div class="ar mt-20">
-                                 <div>
-                                    <h4 class="bg-grey bg-darken-4 m-0 p-10 white m-0">Wide</h4>
-                                 </div>
-                                 <div class="aione-table">
-                                    <table class="wide">
-                                       <thead>
-                                          <tr>
-                                             <th>Name</th>
-                                             <th>Item Name</th>
-                                             <th>Item Price</th>
-                                          </tr>
-                                       </thead>
-                                       <tbody>
-                                          <tr>
-                                             <td>Alvin</td>
-                                             <td>Eclair</td>
-                                             <td>$0.87</td>
-                                          </tr>
-                                          <tr>
-                                             <td>Alan</td>
-                                             <td>Jellybean</td>
-                                             <td>$3.76</td>
-                                          </tr>
-                                          <tr>
-                                             <td>Jonathan</td>
-                                             <td>Lollipop</td>
-                                             <td>$7.00</td>
-                                          </tr>
-                                       </tbody>
-                                    </table>
-                                 </div>
-                                 <div class="aione-border aione-border-top-none p-20">
-                                    <code class="blue-grey darken-4 font-size-17 line-height-27 font-weight-400">
-                                       <p>&lt;div class="aione-table"&gt;</p>
-                                       <p class="ml-30">&lt;table class="wide" &gt;</p>
-                                       <p class="ml-60">&lt;thead&gt;</p>
-                                       <p class="ml-80">&lt;tr&gt;</p>
-                                       <p class="ml-100">&lt;th&gt;Name &lt;/th&gt;</p>
-                                       <p class="ml-100">&lt;th&gt;Item Name &lt;/th&gt;</p>
-                                       <p class="ml-100">&lt;th&gt;Item Price &lt;/th&gt;</p>
-                                       <p class="ml-80">&lt;/tr&gt;</p>
-                                       <p class="ml-60">&lt;/thead&gt;</p>
-                                       <p class="ml-80">&lt;tr&gt;</p>
-                                       <p class="ml-100">&lt;td&gt;Alvin &lt;/td&gt;</p>
-                                       <p class="ml-100">&lt;td&gt;Eclair &lt;/td&gt;</p>
-                                       <p class="ml-100">&lt;td&gt;$0.87 &lt;/td&gt;</p>
-                                       <p class="ml-80">&lt;/tr&gt;</p>
-                                       <p class="ml-80">&lt;tr&gt;</p>
-                                       <p class="ml-100">&lt;td&gt;Alan &lt;/td&gt;</p>
-                                       <p class="ml-100">&lt;td&gt;Jellybean &lt;/td&gt;</p>
-                                       <p class="ml-100">&lt;td&gt;$3.76&lt;/td&gt;</p>
-                                       <p class="ml-80">&lt;/tr&gt;</p>
-                                       <p class="ml-30">&lt;/table  &gt;</p>
-                                       <p>&lt;/div&gt;</p>
-                                    </code>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
+                                </div>
+                            </div>
+                        </section>
+	   									</div>
                      </div>
                   </div>
                   <!-- .wrapper -->
