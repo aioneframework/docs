@@ -12,6 +12,7 @@ $(document).ready(function() {
 	function load_options(){
 		var classes = [];
         var options_data = $('.options').find("form").serializeArray();
+        //console.log(options_data)
         jQuery.each( options_data, function( index, field ) {
         	var field_name = field.name;
         	if(field_name.indexOf("data-") >= 0){
